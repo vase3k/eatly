@@ -1,0 +1,189 @@
+@layer components {
+    .container {
+        @apply mx-auto w-full max-w-90 px-5 md:max-w-[688px] md:px-10 lg:max-w-[1296px] lg:px-[72px];
+    }
+
+    .font-inter-bold-13 {
+        @apply font-inter text-xs font-bold capitalize;
+    }
+
+    .font-inter-bold-18 {
+        @apply font-inter text-lg font-bold capitalize;
+    }
+
+    .font-inter-med-12 {
+        @apply mb-4 font-inter text-xs font-medium;
+    }
+
+    .font-inter-med-12-o {
+        @apply font-inter text-xs font-medium;
+    }
+
+    .font-inter-med-13 {
+        @apply mb-5 font-inter text-xs font-medium capitalize;
+    }
+
+    .font-inter-med-14 {
+        @apply font-inter text-sm font-medium uppercase;
+    }
+
+    .font-inter-med-14-low {
+        @apply font-inter text-sm font-medium;
+    }
+
+    .font-inter-med-17 {
+        @apply font-inter text-base leading-6 font-medium;
+    }
+
+    .font-inter-med-18 {
+        @apply mb-6 font-inter text-lg font-medium capitalize;
+    }
+
+    .font-inter-semi-18 {
+        @apply mb-6 font-inter text-lg font-semibold capitalize;
+    }
+
+    .font-manrope-bold-13 {
+        @apply font-manrope text-xs font-bold;
+    }
+
+    .font-manrope-bold-17 {
+        @apply font-manrope text-base font-bold;
+    }
+
+    .font-manrope-extra-12 {
+        @apply font-manrope text-xs leading-4 font-bold tracking-wide;
+    }
+
+    .font-manrope-extra-13 {
+        @apply font-manrope text-xs leading-5 font-bold tracking-wide;
+    }
+
+    .font-manrope-med-10 {
+        @apply font-manrope text-xs leading-4 font-medium tracking-wider;
+    }
+
+    .font-manrope-reg-12 {
+        @apply font-manrope text-xs leading-4 font-normal;
+    }
+
+    .font-manrope-reg-13 {
+        @apply font-manrope text-xs font-normal;
+    }
+
+    .font-manrope-reg-14 {
+        @apply font-manrope text-sm font-normal;
+    }
+
+    .font-manrope-reg-16 {
+        @apply font-manrope text-base font-normal;
+    }
+
+    .font-manrope-reg-17 {
+        @apply font-manrope text-base font-normal;
+    }
+
+    .font-manrope-reg-18 {
+        @apply font-manrope text-lg font-normal;
+    }
+
+    .font-manrope-reg-20 {
+        @apply font-manrope text-xl font-normal;
+    }
+
+    .font-poppins-med-8 {
+        @apply font-poppins text-xs leading-3 font-medium;
+    }
+
+    .font-poppins-med-9 {
+        @apply font-poppins text-xs leading-3 font-medium;
+    }
+
+    .font-poppins-med-9-250 {
+        @apply font-poppins text-xs leading-6 font-medium;
+    }
+
+    .font-poppins-med-12 {
+        @apply font-poppins text-xs font-medium;
+    }
+
+    .font-poppins-med-12-ls {
+        @apply font-poppins text-xs leading-4 font-medium tracking-normal;
+    }
+
+    .font-poppins-med-16 {
+        @apply font-poppins text-base leading-6 font-medium tracking-wide;
+    }
+
+    .font-poppins-med-16-140 {
+        @apply font-poppins text-base leading-6 font-medium;
+    }
+
+    .font-poppins-med-20 {
+        @apply font-poppins text-xl leading-10 font-medium tracking-normal;
+    }
+
+    .font-poppins-med-22 {
+        @apply font-poppins text-xl leading-8 font-medium;
+    }
+
+    .font-poppins-reg-8 {
+        @apply font-poppins text-xs font-normal;
+    }
+
+    .font-poppins-reg-11 {
+        @apply font-poppins text-xs font-normal;
+    }
+
+    .font-poppins-semi-13 {
+        @apply font-poppins text-xs leading-8 font-semibold;
+    }
+
+    .font-poppins-semi-13-140 {
+        @apply font-poppins text-xs leading-5 font-semibold;
+    }
+
+    .font-poppins-semi-16 {
+        @apply font-poppins text-base font-semibold;
+    }
+
+    .font-poppins-semi-16-130 {
+        @apply font-poppins text-base leading-5 font-semibold;
+    }
+
+    .font-poppins-semi-17 {
+        @apply font-poppins text-base leading-10 font-semibold;
+    }
+
+    .font-poppins-semi-19 {
+        @apply font-poppins text-lg leading-6 font-semibold;
+    }
+
+    .font-poppins-semi-20 {
+        @apply font-poppins text-xl leading-6 font-semibold;
+    }
+
+    .font-poppins-semi-21 {
+        @apply font-poppins text-xl font-semibold;
+    }
+
+    .font-poppins-semi-22 {
+        @apply font-poppins text-xl leading-7 font-semibold;
+    }
+
+    .font-poppins-semi-24 {
+        @apply font-poppins text-2xl leading-loose font-semibold;
+    }
+
+    .font-poppins-semi-25 {
+        @apply font-poppins text-2xl font-semibold;
+    }
+
+    .font-poppins-semi-29 {
+        @apply font-poppins text-3xl leading-9 font-semibold;
+    }
+
+    .font-poppins-semi-30 {
+        @apply font-poppins text-3xl leading-9 font-semibold;
+    }
+}

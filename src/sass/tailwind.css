@@ -1,0 +1,20 @@
+@import "tailwindcss";
+
+@layer base {
+    body {
+        @apply font-poppins;
+    }
+
+    html {
+        @apply scroll-smooth;
+        scrollbar-gutter: stable;
+    }
+
+    button,
+    label {
+        @apply cursor-pointer;
+    }
+}
+
+@import "./theme.css";
+@import "./components.css";
