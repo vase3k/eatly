@@ -1,6 +1,6 @@
 @layer components {
     .container {
-        @apply mx-auto w-full max-w-90 px-5 md:max-w-[688px] md:px-10 lg:max-w-[1296px] lg:px-[72px];
+        @apply mx-auto w-full max-w-[315px] md:max-w-[886px] md:px-10 lg:max-w-[1248px];
     }
 
     .font-inter-bold-13 {
@@ -12,7 +12,7 @@
     }
 
     .font-inter-med-12 {
-        @apply mb-4 font-inter text-xs font-medium;
+        @apply font-inter text-xs font-medium;
     }
 
     .font-inter-med-12-o {
@@ -20,7 +20,7 @@
     }
 
     .font-inter-med-13 {
-        @apply mb-5 font-inter text-xs font-medium capitalize;
+        @apply font-inter text-xs font-medium capitalize;
     }
 
     .font-inter-med-14 {
@@ -36,11 +36,11 @@
     }
 
     .font-inter-med-18 {
-        @apply mb-6 font-inter text-lg font-medium capitalize;
+        @apply font-inter text-lg font-medium capitalize;
     }
 
     .font-inter-semi-18 {
-        @apply mb-6 font-inter text-lg font-semibold capitalize;
+        @apply font-inter text-lg font-semibold capitalize;
     }
 
     .font-manrope-bold-13 {

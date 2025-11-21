@@ -143,7 +143,7 @@
     --font-poppins: "Poppins", sans-serif;
 
     --breakpoint-*: initial;
-    --breakpoint-sm: 375px;
-    --breakpoint-md: 1024px;
-    --breakpoint-lg: 1440px;
+    --breakpoint-sm: 23.4375rem;
+    --breakpoint-md: 64rem;
+    --breakpoint-lg: 90rem;
 }

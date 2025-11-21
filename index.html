@@ -7,7 +7,48 @@
         <title>Eatly | home</title>
     </head>
     <body>
-        <header></header>
+        <header class="bg-white pt-14">
+            <div class="container flex items-center justify-between">
+                <a href="/" class="flex items-center gap-3">
+                    <img
+                        src="/src/img/header/header__logo.svg"
+                        width="46"
+                        height="42"
+                        alt="Eatly logo"
+                    />
+                    <span class="font-poppins-semi-22 text-secondary"
+                        >eatly</span
+                    >
+                </a>
+
+                <nav class="hidden md:block">
+                    <ul class="font-inter-med-18 flex gap-14 text-darkgray">
+                        <li><a class="header__link" href="#">Menu</a></li>
+                        <li><a class="header__link" href="#">Blog</a></li>
+                        <li><a class="header__link" href="#">Pricing</a></li>
+                        <li><a class="header__link" href="#">Contact</a></li>
+                    </ul>
+                </nav>
+
+                <div class="hidden items-center gap-6 md:flex">
+                    <a href="#" class="font-inter-bold-18 text-darkgray"
+                        >Login</a
+                    >
+                    <button
+                        type="button"
+                        class="header__button font-inter-bold-18"
+                    >
+                        Sign up
+                    </button>
+                </div>
+
+                <button class="md:hidden" aria-label="Open menu">
+                    <img src="/src/img/header/burger.svg" alt="" />
+                </button>
+            </div>
+
+            <div class="mt-6 h-px bg-lightgray"></div>
+        </header>
         <main></main>
         <footer></footer>
         <script type="module" src="/src/js/script.js"></script>
