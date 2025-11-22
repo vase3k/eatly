@@ -1,7 +1,8 @@
 import path from "path";
 import { defineConfig } from "vite";
 import tailwindcss from "@tailwindcss/vite";
-import viteWebfontDownload from "vite-plugin-webfont-dl";
+import Unfonts from "unplugin-fonts/vite";
+import webfontDownload from "vite-plugin-webfont-dl";
 import { meta } from "vite-plugin-meta-tags";
 import vitePluginFaviconsInject from "vite-plugin-favicons-inject";
 import convertWebp from "./src/js/services/convertWebp";
@@ -21,9 +22,23 @@ export default defineConfig({
 
     plugins: [
         tailwindcss(),
-        viteWebfontDownload(
+        // Unfonts({
+        //     custom: {
+        //         families: [
+        //             {
+        //                 name: "Benzin",
+        //                 local: "Benzin",
+        //                 src: "src/font/benzin-bold.woff2",
+        //             },
+        //         ],
+        //         display: "swap",
+        //         preload: true,
+        //         injectTo: "head-prepend",
+        //     },
+        // }),
+        webfontDownload(
             [
-                "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap",
+                "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap",
             ],
             {
                 injectAsStyleTag: false,
@@ -32,8 +47,8 @@ export default defineConfig({
             },
         ),
         meta({
-            title: "eatly",
-            description: "eatly",
+            title: "Eatly",
+            description: "Enjoy Foods All Over The World",
             url: "https://eatly.by/",
             img: "/images/meta-og-image.jpg",
             color: "#ffffff",
@@ -49,13 +64,13 @@ export default defineConfig({
                 windows: false,
                 yandex: true,
             },
-            appName: "eatly",
-            appShortName: "eatly",
-            appDescription: "eatly",
+            appName: "Eatly",
+            appShortName: "Eatly",
+            appDescription: "Enjoy Foods All Over The World",
         }),
         convertWebp({
             inputDir: "dist",
-            width: 1440,
+            width: 180,
             quality: 80,
             excludeFolder: ["images"],
         }),

@@ -1,6 +1,2 @@
-@use "/src/sass/helpers/variables.scss";
-@use "/src/sass/helpers/mixins";
-@use "/src/sass/helpers/media";
-@use "/src/sass/helpers/base";
-
-@use "/src/sass/blocks/header.scss";
+@use "/src/sass/blocks/index" as *;
+@use "/src/sass/helpers/index" as *;

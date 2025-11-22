@@ -1,0 +1,27 @@
+@use "/src/sass/helpers/variables" as *;
+
+$sm: 375px;
+$md: 1024px;
+$lg: 1440px;
+
+// lg 1440px 1246px
+// md 1024px 886px
+// sm 375px 314px
+
+@mixin sm {
+    @media (width >= $sm) {
+        @content;
+    }
+}
+
+@mixin md {
+    @media (width >= $md) {
+        @content;
+    }
+}
+
+@mixin lg {
+    @media (width >= $lg) {
+        @content;
+    }
+}

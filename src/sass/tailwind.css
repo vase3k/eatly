@@ -1,20 +1,9 @@
 @import "tailwindcss";
 
-@layer base {
-    body {
-        @apply font-poppins leading-normal;
-    }
+@theme {
+    --color-*: initial;
 
-    html {
-        @apply scroll-smooth;
-        scrollbar-gutter: stable;
-    }
-
-    button,
-    label {
-        @apply cursor-pointer;
-    }
+    --breakpoint-*: initial;
+    --breakpoint-md: 64rem; /* 1024px */
+    --breakpoint-lg: 90rem; /* 1440px */
 }
-
-@import "./theme.css";
-@import "./components.css";

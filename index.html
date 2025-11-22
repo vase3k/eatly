@@ -4,50 +4,57 @@
         <meta charset="UTF-8" />
         <link rel="icon" type="image/svg+xml" href="/vite.svg" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Eatly | home</title>
+        <title>Eatly | Home</title>
     </head>
     <body>
-        <header class="bg-white pt-14">
-            <div class="container flex items-center justify-between">
-                <a href="/" class="flex items-center gap-3">
+        <header class="header pt-10">
+            <div class="container">
+                <div
+                    class="flex flex-wrap items-center justify-between md:gap-x-18 lg:gap-x-[100px]"
+                >
                     <img
                         src="/src/img/header/header__logo.svg"
-                        width="46"
-                        height="42"
-                        alt="Eatly logo"
+                        alt="eatly logo"
+                        width="112"
+                        height="43"
+                        class="header__logo"
                     />
-                    <span class="font-poppins-semi-22 text-secondary"
-                        >eatly</span
+                    <ul
+                        class="hidden grow gap-x-[38px] md:flex lg:gap-x-[54px]"
                     >
-                </a>
-
-                <nav class="hidden md:block">
-                    <ul class="font-inter-med-18 flex gap-14 text-darkgray">
-                        <li><a class="header__link" href="#">Menu</a></li>
-                        <li><a class="header__link" href="#">Blog</a></li>
-                        <li><a class="header__link" href="#">Pricing</a></li>
-                        <li><a class="header__link" href="#">Contact</a></li>
+                        <li class="header__nav-item">
+                            <a href="#">menu</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#">blog</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#">pricing</a>
+                        </li>
+                        <li class="header__nav-item">
+                            <a href="#">contact</a>
+                        </li>
                     </ul>
-                </nav>
-
-                <div class="hidden items-center gap-6 md:flex">
-                    <a href="#" class="font-inter-bold-18 text-darkgray"
-                        >Login</a
-                    >
-                    <button
-                        type="button"
-                        class="header__button font-inter-bold-18"
-                    >
-                        Sign up
-                    </button>
+                    <div class="hidden items-center gap-3 md:flex lg:gap-x-9">
+                        <a class="header__login" href="/">Login</a>
+                        <button type="button" class="header__button">
+                            Sign up
+                        </button>
+                    </div>
+                    <div class="header__close relative h-6 w-8 md:hidden">
+                        <div
+                            class="header__close--top header__close-item"
+                        ></div>
+                        <div
+                            class="header__close--mid header__close-item"
+                        ></div>
+                        <div
+                            class="header__close--bottom header__close-item"
+                        ></div>
+                    </div>
+                    <div class="divider mt-7.5 md:mt-[18px] lg:mt-6"></div>
                 </div>
-
-                <button class="md:hidden" aria-label="Open menu">
-                    <img src="/src/img/header/burger.svg" alt="" />
-                </button>
             </div>
-
-            <div class="mt-6 h-px bg-lightgray"></div>
         </header>
         <main></main>
         <footer></footer>
