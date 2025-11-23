@@ -7,7 +7,7 @@
         <title>Eatly | Home</title>
     </head>
     <body>
-        <header class="header pt-10">
+        <header class="header relative pt-10">
             <div class="container">
                 <div
                     class="flex flex-wrap items-center justify-between md:gap-x-18 lg:gap-x-[100px]"
@@ -19,9 +19,7 @@
                         height="43"
                         class="header__logo"
                     />
-                    <ul
-                        class="hidden grow gap-x-[38px] md:flex lg:gap-x-[54px]"
-                    >
+                    <ul class="header__nav grow gap-x-[38px] md:flex lg:gap-x-[54px]" active>
                         <li class="header__nav-item">
                             <a href="#">menu</a>
                         </li>
@@ -37,23 +35,12 @@
                     </ul>
                     <div class="hidden items-center gap-3 md:flex lg:gap-x-9">
                         <a class="header__login" href="/">Login</a>
-                        <button type="button" class="header__button">
-                            Sign up
-                        </button>
+                        <button type="button" class="header__button">Sign up</button>
                     </div>
-                    <div
-                        class="header__close relative h-6 w-8 md:hidden"
-                        active
-                    >
-                        <div
-                            class="header__close--top header__close-item"
-                        ></div>
-                        <div
-                            class="header__close--mid header__close-item"
-                        ></div>
-                        <div
-                            class="header__close--bottom header__close-item"
-                        ></div>
+                    <div class="header__close relative h-6 w-8 md:hidden" active>
+                        <div class="header__close--top header__close-item"></div>
+                        <div class="header__close--mid header__close-item"></div>
+                        <div class="header__close--bottom header__close-item"></div>
                     </div>
                     <div class="divider mt-7.5 md:mt-[18px] lg:mt-6"></div>
                 </div>

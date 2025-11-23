@@ -11,6 +11,8 @@ html {
     letter-spacing: 0px;
 
     background-color: $color-background;
+
+    overflow: hidden;
 }
 
 $paddingWidth: calc(fluid(5, 10) * 2);

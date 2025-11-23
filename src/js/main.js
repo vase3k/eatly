@@ -1,3 +1,7 @@
 "use strict";
 
-window.addEventListener("DOMContentLoaded", async () => {});
+import Header from "./modules/header";
+
+window.addEventListener("DOMContentLoaded", async () => {
+    new Header();
+});
