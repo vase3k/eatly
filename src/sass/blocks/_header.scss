@@ -21,7 +21,9 @@
         right: 0;
         top: 0;
         width: 60vw;
+        height: 100vh;
         padding-top: 40px;
+        padding-left: 30px;
         background-color: $color-background;
         transform: translate(100%, 0);
         transition: transform 0.3s ease-out;
@@ -36,6 +38,8 @@
             width: unset;
             background-color: unset;
             transform: unset;
+            height: unset;
+            padding-left: unset;
         }
 
         &-item {

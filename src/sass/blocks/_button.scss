@@ -1,0 +1,24 @@
+@use "/src/sass/helpers/media" as *;
+@use "/src/sass/helpers/mixins" as *;
+@use "/src/sass/helpers/variables" as *;
+
+.button {
+    width: 124px;
+    height: 48px;
+    border-radius: 10px;
+    background: rgba(108, 95, 188, 1);
+
+    color: rgba(255, 255, 255, 1);
+
+    font-family: Poppins;
+    font-size: 13px;
+    font-weight: 500;
+    letter-spacing: 1%;
+    text-transform: capitalize;
+    &--white {
+        width: 88px;
+        border: 1px solid rgba(108, 95, 188, 1);
+        background: rgba(255, 255, 255, 1);
+        color: rgba(108, 95, 188, 1);
+    }
+}
