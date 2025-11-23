@@ -6,6 +6,7 @@
     font-family: Inter;
     text-transform: capitalize;
     color: $color-header-nav;
+    z-index: 1;
 
     &__logo {
         @include md {

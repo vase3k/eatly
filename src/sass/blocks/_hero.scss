@@ -23,11 +23,22 @@
     // .hero__title
     &__title {
         font-family: Poppins;
-        font-size: 46px;
+        font-size: 43px;
         font-weight: 600;
         line-height: 120%;
         letter-spacing: -1.85px;
         text-align: center;
+        @include md {
+            width: 403px;
+            font-size: 54px;
+            letter-spacing: -2.13px;
+            text-align: left;
+        }
+        @include lg {
+            width: 567px;
+            font-size: 75px;
+            letter-spacing: -3px;
+        }
     }
     // .hero__highlight
     &__highlight {
@@ -40,6 +51,20 @@
         font-weight: 400;
         text-align: center;
         color: #676767;
+        opacity: 0.7;
+        @include md {
+            width: 355px;
+            font-size: 13px;
+            font-weight: 400;
+            line-height: 20px;
+            text-align: justify;
+        }
+        @include lg {
+            width: 500px;
+            font-size: 18px;
+            font-weight: 400;
+            line-height: 28px;
+        }
     }
     // .hero__bonus
     &__bonus {
@@ -58,5 +83,10 @@
     }
     // .hero__users
     &__users {
+        color: rgba(51, 65, 85, 1);
+        opacity: 0.7;
+        font-family: Plus Jakarta Sans;
+        font-size: 13px;
+        font-weight: 500;
     }
 }
