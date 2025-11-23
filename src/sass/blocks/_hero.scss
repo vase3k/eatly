@@ -5,24 +5,24 @@
 .hero {
     // .hero__subtitle
     &__subtitle {
-        color: #201f1f;
-        font-family: Poppins;
+        color: $color-hero-subtitle;
+        font-family: "Poppins";
         font-size: 10px;
         font-weight: 600;
         letter-spacing: 1px;
         & .divider {
-            background-color: #201f1f;
+            background-color: $color-hero-subtitle;
             @include md {
-                background-color: rgba(32, 31, 31, 0.2);
+                background-color: rgba($color-hero-subtitle, 0.2);
             }
         }
         @include md {
-            color: rgba(32, 31, 31, 0.2);
+            color: rgba($color-hero-subtitle, 0.2);
         }
     }
     // .hero__title
     &__title {
-        font-family: Poppins;
+        font-family: "Poppins";
         font-size: 43px;
         font-weight: 600;
         line-height: 120%;
@@ -42,51 +42,103 @@
     }
     // .hero__highlight
     &__highlight {
-        color: #5c4eae;
+        color: $color-hero-highlight;
     }
     // .hero__text
     &__text {
-        font-family: Inter;
+        font-family: "Inter";
         font-size: 11px;
-        font-weight: 400;
         text-align: center;
-        color: #676767;
+        color: $color-hero-text;
         opacity: 0.7;
         @include md {
             width: 355px;
             font-size: 13px;
-            font-weight: 400;
             line-height: 20px;
             text-align: justify;
         }
         @include lg {
             width: 500px;
             font-size: 18px;
-            font-weight: 400;
             line-height: 28px;
         }
     }
     // .hero__bonus
     &__bonus {
-        color: #5c4eae;
+        color: $color-hero-highlight;
         font-weight: 500;
     }
 
-    // .hero__rating
-    &__rating {
-    }
-    // .hero__star
-    &__star {
-    }
-    // .hero__stars
-    &__stars {
-    }
     // .hero__users
     &__users {
-        color: rgba(51, 65, 85, 1);
+        color: $color-hero-users;
         opacity: 0.7;
-        font-family: Plus Jakarta Sans;
+        font-family: "Plus Jakarta Sans";
         font-size: 13px;
         font-weight: 500;
+    }
+
+    // .hero__plate
+    &__plate {
+        &::before {
+            content: "";
+            width: 200px;
+            height: 200px;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-45%, -54%);
+            border-radius: 100%;
+            z-index: -1;
+            background: linear-gradient(
+                137.14deg,
+                $color-hero-plate-gradient-start,
+                $color-hero-plate-gradient-end 100%
+            );
+        }
+    }
+    // .hero__top
+    &__top {
+        position: absolute;
+        top: -28px;
+        right: -38px;
+        width: 157px;
+        height: 43px;
+        border-radius: 8px;
+        background: $color-hero-top-bg;
+        box-shadow: -4.67px 5.84px 9.734864234924316px 0px rgba(0, 0, 0, 0.15);
+        font-family: "Poppins";
+        &-icon {
+        }
+        &-title {
+            color: $color-hero-top-title;
+            font-size: 8px;
+            font-weight: 600;
+            line-height: 140%;
+        }
+        &-subtitle {
+            color: $color-hero-top-title;
+            font-size: 5px;
+            font-weight: 500;
+            line-height: 140%;
+        }
+        &-end {
+            color: $color-hero-top-end;
+            font-size: 5px;
+            font-weight: 500;
+            line-height: 140%;
+        }
+    }
+    // .hero__bottom
+    &__bottom {
+        position: absolute;
+        left: -49px;
+        bottom: -28px;
+        width: 99px;
+        height: 98px;
+        border: 1px solid $color-hero-bottom-border;
+        border-radius: 8px;
+        box-shadow: 7px 9px 18px 0px rgba(26, 32, 44, 0.15);
+        background: $color-hero-bottom-bg;
     }
 }
