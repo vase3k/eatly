@@ -38,39 +38,48 @@
     }
 
     &__close {
+        position: relative;
+
         &-item {
             width: 100%;
             height: 2px;
             background-color: $color-header-close;
             border-radius: 2px;
             transition: all 0.3s ease-out;
+            position: absolute;
+            left: 0;
         }
 
         &--top {
-            position: absolute;
             top: 0;
-            &[active] {
-                @include abs-center;
-                transform: rotate(45deg);
-            }
         }
 
         &--mid {
-            @include abs-center;
-            &[active] {
-                @include hide;
-            }
+            top: 50%;
+            transform: translateY(-50%);
         }
 
         &--bottom {
-            position: absolute;
             bottom: 0;
-            &[active] {
+        }
+
+        &[active] {
+            .header__close--top {
+                @include abs-center;
+                transform: rotate(45deg);
+            }
+
+            .header__close--mid {
+                @include hide;
+            }
+
+            .header__close--bottom {
                 @include abs-center;
                 transform: rotate(-45deg);
             }
         }
     }
+
     &__button {
         width: 86px;
         height: 45px;
