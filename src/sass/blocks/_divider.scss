@@ -1,10 +1,3 @@
 @use "/src/sass/helpers/media" as *;
 @use "/src/sass/helpers/mixins" as *;
 @use "/src/sass/helpers/variables" as *;
-
-.divider {
-    flex-basis: 100%;
-    width: 100%;
-    height: 1px;
-    background-color: $color-divider;
-}
