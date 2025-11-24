@@ -1,3 +1,88 @@
 @use "/src/sass/helpers/media" as *;
 @use "/src/sass/helpers/mixins" as *;
 @use "/src/sass/helpers/variables" as *;
+
+.header {
+    // .header__logo
+    &__logo {
+    }
+    // .header__link
+    &__link {
+        font-family: $second-family;
+        font-weight: 500;
+        font-size: 12px;
+        text-transform: capitalize;
+        color: $gray-nav;
+
+        @include hover-opacity;
+
+        @include lg {
+            font-size: 17px;
+        }
+    }
+    &__buttons {
+        font-family: $second-family;
+        font-weight: 700;
+        font-size: 12px;
+        text-transform: capitalize;
+        color: $gray-nav;
+
+        @include lg {
+            font-size: 17px;
+        }
+    }
+    // .header__login
+    &__login {
+        @include hover-opacity;
+    }
+    // .header__button
+    &__button {
+        color: $white-bg;
+
+        border-radius: 13px;
+        padding-block: 6px;
+        padding-inline: 8px;
+        width: 86px;
+        height: 45px;
+
+        background: $main;
+
+        @include hover-opacity;
+
+        @include lg {
+            border-radius: 18px;
+            padding-block: 8px;
+            padding-inline: 16px;
+            width: 121px;
+            height: 62px;
+        }
+    }
+    // .header__close
+    &__close {
+        width: 32px;
+        height: 24px;
+    }
+    // .header__close-bar
+    &__close-bar {
+        height: 2px;
+        width: 100%;
+        background-color: $color-pppyi;
+        border-radius: 2px;
+        &:nth-child(1) {
+            position: absolute;
+            top: 0;
+            left: 50%;
+            translate: -50% 0;
+        }
+        &:nth-child(2) {
+            @include abs-center;
+        }
+        &:nth-child(3) {
+            position: absolute;
+            top: unset;
+            bottom: 0;
+            left: 50%;
+            translate: -50% 0;
+        }
+    }
+}

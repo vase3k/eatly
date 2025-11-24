@@ -7,7 +7,31 @@
         <title>Eatly | Home</title>
     </head>
     <body>
-        <header></header>
+        <header class="header pt-[30px] lg:pt-12">
+            <div class="container flex items-center justify-between gap-x-[100px]">
+                <div class="header__logo w-[110px] md:max-lg:w-20">
+                    <img src="/src/img/header/header__logo.svg" alt="eatly logo" />
+                </div>
+                <ul class="hidden grow md:flex md:gap-x-[38px] lg:gap-x-[52px]" role="navigation">
+                    <li><a href="/" class="header__link">Menu</a></li>
+                    <li><a href="/" class="header__link">Blog</a></li>
+                    <li><a href="/" class="header__link">Pricing</a></li>
+                    <li><a href="/" class="header__link">Contact</a></li>
+                </ul>
+                <div class="header__buttons hidden items-center gap-x-[25px] md:flex">
+                    <a href="/" class="header__login">Login</a>
+                    <button type="button" class="header__button">Sign up</button>
+                </div>
+                <div class="header__close relative md:hidden">
+                    <div class="header__close-bar"></div>
+                    <div class="header__close-bar"></div>
+                    <div class="header__close-bar"></div>
+                </div>
+            </div>
+            <div class="container">
+                <div class="divider mt-[30px] md:mt-[18px] lg:mt-[25px]"></div>
+            </div>
+        </header>
         <main></main>
         <footer></footer>
         <script type="module" src="/src/js/script.js"></script>
