@@ -9,7 +9,7 @@ html {
     font-style: normal;
     letter-spacing: 0px;
 
-    background-color: $color-background;
+    background-color: $white-bg;
     overflow-x: hidden;
 }
 
@@ -21,7 +21,7 @@ $paddingWidth: calc(fluid(5, 10) * 2);
     max-width: calc(314px + $paddingWidth);
     width: 100%;
     @include md {
-        max-width: calc(886px + $paddingWidth);
+        max-width: calc(888px + $paddingWidth);
     }
     @include lg {
         max-width: calc(1246px + $paddingWidth);
@@ -29,5 +29,5 @@ $paddingWidth: calc(fluid(5, 10) * 2);
 }
 
 // lg 1440px 1246px
-// md 1024px 886px
+// md 1024px 888px
 // sm 375px 314px

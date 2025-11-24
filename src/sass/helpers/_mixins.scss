@@ -3,8 +3,8 @@
 @use "sass:math";
 
 @function fluid($min, $max) {
-    $maxViewportWidth: 1440;
-    $minViewportWidth: 375;
+    $maxViewportWidth: strip-px($lg);
+    $minViewportWidth: strip-px($sm);
 
     $maxSize: math.div($max, 16);
     $minSize: math.div($min, 16);
@@ -21,8 +21,12 @@
     );
 }
 
-@mixin fluid-text($min, $max) {
+@mixin text-fluid($min, $max) {
     font-size: fluid($min, $max);
+}
+
+@function strip-px($value) {
+    @return $value / 1px;
 }
 
 @mixin hide {
