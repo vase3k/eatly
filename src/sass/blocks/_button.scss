@@ -3,33 +3,27 @@
 @use "/src/sass/helpers/variables" as *;
 
 .button {
-    border-radius: 10px;
-    width: 125px;
+    padding: 10px 22px;
     height: 47px;
-    background-color: $main;
+    border-radius: 12px;
     font-family: $font-family;
     font-weight: 500;
-    text-transform: capitalize;
     color: $white;
+    text-transform: capitalize;
+    background-color: $main;
+    border: 2px solid $main;
     &:active {
         background-color: $white;
         color: $main;
-        border: 2px solid $main;
     }
-
     @include lg {
-        border-radius: 12px;
-        width: 156px;
+        font-size: 16px;
         height: 59px;
+        padding: 10px 27px;
     }
     &--white {
-        width: 88px;
         color: $main;
-        background-color: unset;
-        border: 2px solid $main;
-        @include lg {
-            width: 110px;
-        }
+        background-color: $white;
         &:active {
             background-color: $main;
             color: $white;
