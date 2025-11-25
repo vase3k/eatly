@@ -26,6 +26,12 @@ class Header {
 
         // Переключаем атрибут "active" на навигации
         this.rootElement.toggleAttribute(this.attributes.isActive);
+
+        if (this.rootElement.hasAttribute(this.attributes.isActive)) {
+            document.body.style.overflow = "hidden";
+        } else {
+            document.body.style.overflow = "";
+        }
     };
 
     // Метод для подключения всех событий

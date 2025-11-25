@@ -1,3 +1,29 @@
 @use "/src/sass/helpers/media" as *;
 @use "/src/sass/helpers/mixins" as *;
 @use "/src/sass/helpers/variables" as *;
+
+.button {
+    border-radius: 10px;
+    width: 125px;
+    height: 47px;
+    background-color: $main;
+    font-family: $font-family;
+    font-weight: 500;
+    text-transform: capitalize;
+    color: $white;
+
+    @include lg {
+        border-radius: 12px;
+        width: 156px;
+        height: 59px;
+    }
+    &--white {
+        width: 88px;
+        color: $main;
+        background-color: unset;
+        border: 2px solid $main;
+        @include lg {
+            width: 110px;
+        }
+    }
+}

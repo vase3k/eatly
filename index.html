@@ -13,10 +13,9 @@
                     <img src="/src/img/header/header__logo.svg" alt="eatly logo" />
                 </div>
                 <ul
-                    class="header__nav md:flex md:grow md:gap-x-[38px] lg:gap-x-[52px]"
+                    class="header__nav z-1 md:flex md:grow md:gap-x-[38px] lg:gap-x-[52px]"
                     role="navigation"
                     data-js-header-nav
-                    data-active
                 >
                     <li><a href="/" class="header__link">Menu</a></li>
                     <li><a href="/" class="header__link">Blog</a></li>
@@ -27,7 +26,7 @@
                     <a href="/" class="header__login">Login</a>
                     <button type="button" class="header__button">Sign up</button>
                 </div>
-                <div class="header__close relative md:hidden" data-active data-js-close>
+                <div class="header__close relative z-1 md:hidden" data-js-close>
                     <div class="header__close-bar"></div>
                     <div class="header__close-bar"></div>
                     <div class="header__close-bar"></div>
@@ -37,7 +36,65 @@
                 <div class="divider mt-[30px] md:mt-[18px] lg:mt-[25px]"></div>
             </div>
         </header>
-        <main></main>
+        <main>
+            <section class="hero mt-[60px] md:mt-10 lg:mt-[54px]">
+                <div
+                    class="container gap-y-[50px] md:flex md:flex-row md:gap-x-[26px] lg:gap-x-2.5"
+                >
+                    <div
+                        class="flex shrink-0 flex-col border md:w-[404px] md:gap-y-6 lg:w-[568px] lg:gap-y-[35px]"
+                    >
+                        <div class="hero__subtitle flex items-center gap-x-3">
+                            <div class="divider w-[33px]"></div>
+                            <span>OVER 1000 USERS</span>
+                        </div>
+                        <h1 class="hero__title">Enjoy Foods Over <span>World</span></h1>
+                        <p class="hero__descr">
+                            Eatly help you set saving goals, earn cash back offers, Go to disclaimer
+                            for more details and get paychecks up to two days early. Get a
+                            <span>$20 bonus.</span>
+                        </p>
+                        <div class="hero__buttons gap-x-3.5 lg:gap-x-4.5">
+                            <button type="button" class="button">Get Started</button>
+                            <button type="button" class="button button--white">Go Pro</button>
+                        </div>
+                        <div class="flex gap-x-3 lg:gap-x-[15px]">
+                            <img
+                                src="/src/img/hero/hero__stars.svg"
+                                alt="trustpilot rating"
+                                width="99"
+                                class="lg:w-[124px]"
+                            />
+                            <img
+                                src="/src/img/hero/hero__star.svg"
+                                alt="5 stars rating"
+                                width="77"
+                                class="lg:w-24"
+                            />
+                            <span class="hero__stars-text self-center">4900+</span>
+                        </div>
+                    </div>
+
+                    <div
+                        class="flex h-[290px] shrink-0 border md:h-[432px] md:w-[484px] lg:h-[608px] lg:w-[680px]"
+                    >
+                        <div class="relative m-auto border">
+                            <img
+                                src="/src/img/hero/hero__plate-element-3.png"
+                                alt="plate with food"
+                                width="200"
+                                class="md:w-[320px] lg:w-md"
+                            />
+                            <img
+                                src="/src/img/hero/hero__plate-element-4.svg"
+                                alt="decoration arrow"
+                                class="hero__arrow absolute"
+                            />
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
         <footer></footer>
         <script type="module" src="/src/js/script.js"></script>
     </body>

@@ -1,3 +1,100 @@
 @use "/src/sass/helpers/media" as *;
 @use "/src/sass/helpers/mixins" as *;
 @use "/src/sass/helpers/variables" as *;
+
+.hero {
+    &__subtitle {
+        font-family: $font-family;
+        font-weight: 600;
+        font-size: 9px;
+        line-height: 1.2;
+        letter-spacing: 0.13em;
+        color: $dark-text;
+        & .divider {
+            background-color: $dark-text;
+        }
+        @include md {
+            color: $color-z44by;
+            .divider {
+                background-color: $color-z44by;
+            }
+        }
+    }
+
+    &__title {
+        font-family: $font-family;
+        font-weight: 600;
+        font-size: 46px;
+        line-height: 1.2;
+        letter-spacing: -0.04em;
+        text-align: center;
+        color: $dark-text;
+        & span {
+            color: $purple-bg;
+        }
+
+        @include md {
+            font-size: 53px;
+            text-align: start;
+        }
+
+        @include lg {
+            font-size: 75px;
+            letter-spacing: -0.04em;
+        }
+    }
+    // .hero__descr
+    &__descr {
+        font-family: $second-family;
+        font-size: 11px;
+        text-align: center;
+        color: $dim-text;
+        opacity: 0.7;
+        & span {
+            font-weight: 500;
+            color: $purple-bg;
+        }
+
+        @include md {
+            font-size: 12px;
+            text-align: justify;
+            max-width: 354px;
+        }
+
+        @include lg {
+            font-size: 18px;
+            max-width: 500px;
+        }
+    }
+
+    &__stars-text {
+        font-family: $font6;
+        font-weight: 500;
+        font-size: 12px;
+        color: $outer-text;
+        opacity: 0.7;
+        @include md {
+            font-size: 11px;
+        }
+        @include lg {
+            font-size: 16px;
+        }
+    }
+
+    &__arrow {
+        top: 30px;
+        right: -22px;
+        width: 32px;
+        z-index: -1;
+        @include md {
+            top: 43px;
+            right: -33px;
+            width: 50px;
+        }
+        @include lg {
+            width: 71px;
+            top: 61px;
+            right: -47px;
+        }
+    }
+}
