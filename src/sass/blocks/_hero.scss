@@ -10,7 +10,11 @@
         line-height: 1.2;
         letter-spacing: 0.13em;
         color: $dark-text;
+        display: flex;
+        column-gap: 12px;
+        align-items: center;
         & .divider {
+            width: 34px;
             background-color: $dark-text;
         }
         @include md {
@@ -43,7 +47,7 @@
             letter-spacing: -0.04em;
         }
     }
-    // .hero__descr
+
     &__descr {
         font-family: $second-family;
         font-size: 11px;
@@ -78,23 +82,6 @@
         }
         @include lg {
             font-size: 16px;
-        }
-    }
-
-    &__arrow {
-        top: 30px;
-        right: -22px;
-        width: 32px;
-        z-index: -1;
-        @include md {
-            top: 43px;
-            right: -33px;
-            width: 50px;
-        }
-        @include lg {
-            width: 71px;
-            top: 61px;
-            right: -47px;
         }
     }
 }

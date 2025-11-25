@@ -37,59 +37,50 @@
             </div>
         </header>
         <main>
-            <section class="hero mt-[60px] md:mt-10 lg:mt-[54px]">
-                <div
-                    class="container gap-y-[50px] md:flex md:flex-row md:gap-x-[26px] lg:gap-x-2.5"
-                >
+            <section class="hero pt-[60px]">
+                <div class="container flex flex-col gap-[50px_26px] md:flex-row lg:gap-[0px_38px]">
+                    <!--top-->
                     <div
-                        class="flex shrink-0 flex-col border md:w-[404px] md:gap-y-6 lg:w-[568px] lg:gap-y-[35px]"
+                        class="flex flex-col items-center md:shrink-0 md:basis-[404px] lg:basis-[568px]"
                     >
-                        <div class="hero__subtitle flex items-center gap-x-3">
-                            <div class="divider w-[33px]"></div>
+                        <div class="hero__subtitle">
+                            <div class="divider"></div>
                             <span>OVER 1000 USERS</span>
                         </div>
-                        <h1 class="hero__title">Enjoy Foods Over <span>World</span></h1>
-                        <p class="hero__descr">
+
+                        <h1 class="hero__title mt-[5px]">Enjoy Foods Over <span>World</span></h1>
+
+                        <p class="hero__descr mt-[15px]">
                             Eatly help you set saving goals, earn cash back offers, Go to disclaimer
                             for more details and get paychecks up to two days early. Get a
                             <span>$20 bonus.</span>
                         </p>
-                        <div class="hero__buttons gap-x-3.5 lg:gap-x-4.5">
-                            <button type="button" class="button">Get Started</button>
+
+                        <div class="hero__buttons mt-[42px]">
+                            <button type="button" class="button mr-[15px]">Get Started</button>
                             <button type="button" class="button button--white">Go Pro</button>
                         </div>
-                        <div class="flex gap-x-3 lg:gap-x-[15px]">
+
+                        <div class="mt-[26px] flex items-end gap-x-3">
                             <img
                                 src="/src/img/hero/hero__stars.svg"
                                 alt="trustpilot rating"
                                 width="99"
-                                class="lg:w-[124px]"
+                                class=""
                             />
                             <img
                                 src="/src/img/hero/hero__star.svg"
                                 alt="5 stars rating"
                                 width="77"
-                                class="lg:w-24"
+                                class="self-center"
                             />
-                            <span class="hero__stars-text self-center">4900+</span>
+                            <span class="hero__stars-text">4900+</span>
                         </div>
                     </div>
-
-                    <div
-                        class="flex h-[290px] shrink-0 border md:h-[432px] md:w-[484px] lg:h-[608px] lg:w-[680px]"
-                    >
-                        <div class="relative m-auto border">
-                            <img
-                                src="/src/img/hero/hero__plate-element-3.png"
-                                alt="plate with food"
-                                width="200"
-                                class="md:w-[320px] lg:w-md"
-                            />
-                            <img
-                                src="/src/img/hero/hero__plate-element-4.svg"
-                                alt="decoration arrow"
-                                class="hero__arrow absolute"
-                            />
+                    <!--bottom-->
+                    <div class="md:shrink-0 md:basis-[484px] lg:basis-[680px]">
+                        <div class="">
+                            <img src="/src/img/hero/hero__plate.png" alt="plate with decorations" />
                         </div>
                     </div>
                 </div>
