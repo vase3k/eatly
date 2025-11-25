@@ -3,21 +3,43 @@
 @use "/src/sass/helpers/variables" as *;
 
 .header {
-    // .header__logo
-    &__logo {
-    }
-    // .header__link
-    &__link {
-        font-family: $second-family;
-        font-weight: 500;
-        font-size: 12px;
-        text-transform: capitalize;
-        color: $gray-nav;
-
-        @include hover-opacity;
-
-        @include lg {
-            font-size: 17px;
+    &__nav {
+        flex-direction: column;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        width: 60%;
+        height: 100%;
+        background-color: $white-bg;
+        padding: 70px 10px 20px;
+        transition: right 0.3s ease 0s;
+        & .header__link {
+            font-family: $second-family;
+            font-weight: 500;
+            font-size: 42px;
+            color: $gray-nav;
+            text-transform: capitalize;
+            @include md {
+                font-size: 12px;
+            }
+            @include hover-opacity;
+            @include lg {
+                font-size: 17px;
+            }
+        }
+        &[data-active] {
+            right: 0%;
+        }
+        @include md {
+            flex-direction: row;
+            position: static;
+            top: unset;
+            right: unset;
+            width: unset;
+            height: unset;
+            background-color: unset;
+            padding: unset;
+            transition: unset;
         }
     }
     &__buttons {
@@ -26,29 +48,22 @@
         font-size: 12px;
         text-transform: capitalize;
         color: $gray-nav;
-
         @include lg {
             font-size: 17px;
         }
     }
-    // .header__login
     &__login {
         @include hover-opacity;
     }
-    // .header__button
     &__button {
         color: $white-bg;
-
         border-radius: 13px;
         padding-block: 6px;
         padding-inline: 8px;
         width: 86px;
         height: 45px;
-
         background: $main;
-
         @include hover-opacity;
-
         @include lg {
             border-radius: 18px;
             padding-block: 8px;
@@ -57,32 +72,44 @@
             height: 62px;
         }
     }
-    // .header__close
     &__close {
         width: 32px;
         height: 24px;
     }
-    // .header__close-bar
     &__close-bar {
         height: 2px;
         width: 100%;
         background-color: $color-pppyi;
         border-radius: 2px;
+        transition: all 0.3s ease;
         &:nth-child(1) {
             position: absolute;
             top: 0;
             left: 50%;
             translate: -50% 0;
+            .header__close[data-active] & {
+                top: 50%;
+                translate: -50% -50%;
+                rotate: 45deg;
+            }
         }
         &:nth-child(2) {
             @include abs-center;
+            .header__close[data-active] & {
+                opacity: 0;
+            }
         }
         &:nth-child(3) {
             position: absolute;
-            top: unset;
-            bottom: 0;
+            top: 100%;
             left: 50%;
-            translate: -50% 0;
+            translate: -50% -100%;
+
+            .header__close[data-active] & {
+                top: 50%;
+                translate: -50% -50%;
+                rotate: -45deg;
+            }
         }
     }
 }

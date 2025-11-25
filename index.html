@@ -12,7 +12,12 @@
                 <div class="header__logo w-[110px] md:max-lg:w-20">
                     <img src="/src/img/header/header__logo.svg" alt="eatly logo" />
                 </div>
-                <ul class="hidden grow md:flex md:gap-x-[38px] lg:gap-x-[52px]" role="navigation">
+                <ul
+                    class="header__nav md:flex md:grow md:gap-x-[38px] lg:gap-x-[52px]"
+                    role="navigation"
+                    data-js-header-nav
+                    data-active
+                >
                     <li><a href="/" class="header__link">Menu</a></li>
                     <li><a href="/" class="header__link">Blog</a></li>
                     <li><a href="/" class="header__link">Pricing</a></li>
@@ -22,7 +27,7 @@
                     <a href="/" class="header__login">Login</a>
                     <button type="button" class="header__button">Sign up</button>
                 </div>
-                <div class="header__close relative md:hidden">
+                <div class="header__close relative md:hidden" data-active data-js-close>
                     <div class="header__close-bar"></div>
                     <div class="header__close-bar"></div>
                     <div class="header__close-bar"></div>

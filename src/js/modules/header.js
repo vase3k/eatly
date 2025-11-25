@@ -1,13 +1,13 @@
 class Header {
     // Селекторы DOM-элементов, которые нужны для работы хедера
     selectors = {
-        root: ".header__nav", // Основной контейнер навигации
-        burgerButton: ".header__close", // Кнопка-бургер
+        root: "[data-js-header-nav]", // Основной контейнер навигации
+        burgerButton: "[data-js-close]", // Кнопка-бургер
     };
 
     // Имена атрибутов, которые будут переключаться
     attributes = {
-        isActive: "active",
+        isActive: "data-active",
     };
 
     constructor() {
