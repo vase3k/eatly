@@ -11,6 +11,11 @@
     font-weight: 500;
     text-transform: capitalize;
     color: $white;
+    &:active {
+        background-color: $white;
+        color: $main;
+        border: 2px solid $main;
+    }
 
     @include lg {
         border-radius: 12px;
@@ -24,6 +29,10 @@
         border: 2px solid $main;
         @include lg {
             width: 110px;
+        }
+        &:active {
+            background-color: $main;
+            color: $white;
         }
     }
 }
