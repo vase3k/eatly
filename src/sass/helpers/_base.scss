@@ -3,7 +3,7 @@
 @use "/src/sass/helpers/variables" as *;
 
 html {
-    font-family: "poppins", sans-serif;
+    font-family: $font-family, sans-serif;
     font-size: 16px;
     font-weight: 400;
     letter-spacing: 0px;

@@ -85,3 +85,96 @@
         }
     }
 }
+
+.hero {
+    &__top-element {
+        top: 15px;
+        right: 20px;
+        column-gap: 8px;
+        border-radius: 8px;
+        padding-block: 2px;
+        padding-inline: 8px;
+        width: 156px;
+        height: 42px;
+        box-shadow: -5px 6px 10px 0 rgba(0, 0, 0, 0.15);
+        background: $white;
+        color: $gunmetal-text;
+        font-weight: 500;
+        @include md {
+            top: 22px;
+            right: 28px;
+            column-gap: 14px;
+            border-radius: 12px;
+            padding-block: 6px;
+            padding-inline: 12px;
+            width: 234px;
+            height: 63px;
+            box-shadow: 0 12px 18px 0 rgba(70, 70, 70, 0.05);
+        }
+        @include lg {
+            top: 31px;
+            right: 42px;
+            column-gap: 18px;
+            border-radius: 16px;
+            width: 328px;
+            height: 89px;
+            box-shadow: 0 16px 25px 0 rgba(70, 70, 70, 0.05);
+        }
+        &-title {
+            font-weight: 600;
+            font-size: 7px;
+            @include md {
+                font-size: 11px;
+            }
+            @include lg {
+                font-size: 15px;
+            }
+        }
+        &-subtitle {
+            margin-top: 5px;
+            font-size: 4px;
+            @include md {
+                font-size: 7px;
+            }
+            @include lg {
+                font-size: 9px;
+            }
+        }
+        &-time {
+            font-size: 5px;
+            color: $mist-text;
+            @include md {
+                font-size: 7px;
+            }
+            @include lg {
+                font-size: 11px;
+            }
+        }
+    }
+}
+
+.hero__bottom-element {
+    bottom: 18px;
+    left: 17px;
+    width: 98px;
+    height: 97px;
+    border-radius: 8px;
+    box-shadow: 7px 9px 18px 0 rgba(26, 32, 44, 0.15);
+    background: $white;
+    @include md {
+        bottom: 25px;
+        left: 25px;
+        width: 147px;
+        height: 146px;
+        border-radius: 12px;
+        box-shadow: 10px 13px 27px 0 rgba(26, 32, 44, 0.15);
+    }
+    @include lg {
+        bottom: 36px;
+        left: 36px;
+        border-radius: 17px;
+        width: 206px;
+        height: 205px;
+        box-shadow: 14px 19px 38px 0 rgba(26, 32, 44, 0.15);
+    }
+}
