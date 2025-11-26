@@ -6,6 +6,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Eatly | Home</title>
     </head>
+
     <body>
         <header class="header pt-[30px] lg:pt-12">
             <div class="container flex items-center justify-between gap-x-[100px]">
@@ -37,7 +38,7 @@
             </div>
         </header>
         <main>
-            <section class="hero pt-[60px] pb-[75px] md:pt-10 md:pb-[60px] lg:pb-20">
+            <!-- <section class="hero pt-[60px] pb-[75px] md:pt-10 md:pb-[60px] lg:pb-20">
                 <div
                     class="container flex flex-col gap-[50px_26px] md:flex-row md:items-center lg:gap-[0px_38px]"
                 >
@@ -193,6 +194,128 @@
                 </div>
 
                 <div class="divider mt-[60px] lg:mt-[110px]"></div>
+            </section> -->
+
+            <section class="restaurants pt-[84px]">
+                <div class="container flex flex-col items-end">
+                    <h1 class="restaurants__title mx-auto">Our Top <span>Restaurants</span></h1>
+
+                    <ul
+                        class="restaurants__items restaurants__list mt-[60px] flex flex-col gap-y-10 md:flex-row md:gap-x-[22px] lg:gap-x-8"
+                    >
+                        <li class="restaurants__item">
+                            <img
+                                src="/src/img/restaurants/restaurant__img-1.png"
+                                alt="item from menu"
+                                height="176"
+                                class="restaurants__img"
+                            />
+
+                            <div class="restaurants__info">
+                                <div class="restaurants__category">Healthy</div>
+                                <h4 class="restaurants__name">The Chicken King</h4>
+
+                                <div class="restaurants__meta flex items-end gap-x-1.5">
+                                    <span class="restaurants__time">24min</span>
+
+                                    <img
+                                        src="/src/img/restaurants/restaurant__star.svg"
+                                        alt="star"
+                                        width="25"
+                                        class="restaurants__rating-star"
+                                    />
+
+                                    <span class="restaurants__rating-value grow">4.8</span>
+
+                                    <img
+                                        src="/src/img/restaurants/restaurant__bookmark.svg"
+                                        alt="bookmark"
+                                        width="40"
+                                        class="restaurants__bookmark"
+                                    />
+                                </div>
+                            </div>
+                        </li>
+                        <li class="restaurants__item">
+                            <img
+                                src="/src/img/restaurants/restaurant__img-2.png"
+                                alt="item from menu"
+                                class="restaurants__img"
+                            />
+
+                            <div class="restaurants__info px-8 pt-2.5 pb-4.5">
+                                <div class="restaurants__category restaurants__category--trending">
+                                    Trending
+                                </div>
+                                <h4 class="restaurants__name">The Chicken King</h4>
+
+                                <div class="restaurants__meta flex items-end gap-x-1.5">
+                                    <span class="restaurants__time">24min</span>
+
+                                    <img
+                                        src="/src/img/restaurants/restaurant__star.svg"
+                                        alt="star"
+                                        width="25"
+                                        class="restaurants__rating-star"
+                                    />
+
+                                    <span class="restaurants__rating-value grow">4.9</span>
+
+                                    <img
+                                        src="/src/img/restaurants/restaurant__bookmark.svg"
+                                        alt="bookmark"
+                                        width="40"
+                                        class="restaurants__bookmark"
+                                    />
+                                </div>
+                            </div>
+                        </li>
+                        <li class="restaurants__item">
+                            <img
+                                src="/src/img/restaurants/restaurant__img-1.png"
+                                alt="item from menu"
+                                height="176"
+                                class="restaurants__img"
+                            />
+
+                            <div class="restaurants__info px-8 pt-2.5 pb-4.5">
+                                <div class="restaurants__category">Healthy</div>
+                                <h4 class="restaurants__name">The Chicken King</h4>
+
+                                <div class="restaurants__meta flex items-end gap-x-1.5">
+                                    <span class="restaurants__time">24min</span>
+
+                                    <img
+                                        src="/src/img/restaurants/restaurant__star.svg"
+                                        alt="star"
+                                        width="25"
+                                        class="restaurants__rating-star"
+                                    />
+
+                                    <span class="restaurants__rating-value grow">4.8</span>
+
+                                    <img
+                                        src="/src/img/restaurants/restaurant__bookmark.svg"
+                                        alt="bookmark"
+                                        width="40"
+                                        class="restaurants__bookmark"
+                                    />
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="restaurants__more mt-[62px] flex items-center gap-x-5">
+                        <a href="/" class="restaurants__more-link">View All</a>
+                        <img
+                            src="/src/img/restaurants/restaurant__arrow.svg"
+                            alt="arrow"
+                            class="restaurants__more-arrow"
+                            width="16"
+                        />
+                    </div>
+                </div>
+                <div class="divider mt-[66px]"></div>
             </section>
         </main>
         <footer></footer>

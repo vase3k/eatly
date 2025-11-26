@@ -1,0 +1,110 @@
+@use "/src/sass/helpers/media" as *;
+@use "/src/sass/helpers/mixins" as *;
+@use "/src/sass/helpers/variables" as *;
+
+.restaurants {
+    &__title {
+        width: 281px;
+        font-weight: 600;
+        font-size: 30px;
+        line-height: 1.2;
+        text-align: center;
+        color: $gunmetal-text;
+        span {
+            color: $main;
+        }
+        @include md {
+            width: auto;
+        }
+        @include lg {
+            font-size: 45px;
+        }
+    }
+    &__items {
+    }
+    &__list {
+    }
+    &__item {
+        border: 1px solid $white-bg-card;
+        border-radius: 30px;
+        box-shadow: 5px 57px 28px 0 rgba(229, 229, 229, 0.7);
+        background: $white;
+        @include lg {
+            border-radius: 35px;
+        }
+    }
+    &__img {
+    }
+    &__info {
+        padding: 8px 22px 15px 27px;
+    }
+    &__category {
+        display: inline-block;
+        border-radius: 4px;
+        padding-block: 1px;
+        padding-inline: 7px;
+        background-color: $golden-accent;
+        height: 19px;
+
+        font-size: 10px;
+        color: $golden-text;
+        &--trending {
+            color: $red-accent;
+            background-color: $blush-accent;
+        }
+    }
+    &__name {
+        margin-top: 10px;
+        font-weight: 600;
+        font-size: 20px;
+        color: $gunmetal-text;
+        @include lg {
+            font-size: 25px;
+        }
+    }
+    &__meta {
+    }
+    &__time {
+        font-family: $third-family;
+
+        font-size: 15px;
+        color: $gray-text;
+        @include lg {
+            font-size: 18px;
+        }
+    }
+    &__rating-star {
+        @include lg {
+            width: 30px;
+        }
+    }
+    &__rating-value {
+        font-family: $third-family;
+        font-size: 15px;
+        color: $gray-text;
+        @include lg {
+            font-size: 18px;
+        }
+    }
+    &__bookmark {
+        @include lg {
+            width: 45px;
+        }
+    }
+    &__more {
+        font-weight: 500;
+        font-size: 20px;
+        letter-spacing: -0.01em;
+        color: $mist-text;
+        @include lg {
+            font-size: 25px;
+        }
+    }
+    &__more-link {
+    }
+    &__more-arrow {
+        @include lg {
+            width: 20px;
+        }
+    }
+}
