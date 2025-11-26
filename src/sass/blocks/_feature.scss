@@ -1,0 +1,55 @@
+@use "/src/sass/helpers/media" as *;
+@use "/src/sass/helpers/mixins" as *;
+@use "/src/sass/helpers/variables" as *;
+
+.feature {
+    background-color: $purple-bg;
+    background-image:
+        url("/src/img/features/features__svg-2.svg"), url("/src/img/features/features__svg-1.svg");
+    background-repeat: no-repeat;
+    background-position:
+        top left,
+        bottom right;
+    background-size: auto;
+    @include md {
+        background-image:
+            url("/src/img/features/features__svg-md-2.svg"),
+            url("/src/img/features/features__svg-md-1.svg");
+    }
+    @include lg {
+        background-image:
+            url("/src/img/features/features__svg-lg-2.svg"),
+            url("/src/img/features/features__svg-lg-1.svg");
+    }
+    &__item-title {
+        font-family: $font4;
+        font-weight: 700;
+        font-size: 43px;
+        color: $white;
+        @include md {
+            font-size: 30px;
+        }
+        @include lg {
+            font-size: 43px;
+        }
+    }
+    &__item-text {
+        font-family: $second-family;
+        font-weight: 500;
+        font-size: 14px;
+        color: $lavender-text;
+        @include md {
+            font-size: 10px;
+        }
+        @include lg {
+            font-size: 14px;
+        }
+    }
+    &__divider {
+        opacity: 0.15;
+        @include md {
+            width: 1px;
+            height: 100%;
+        }
+    }
+}
