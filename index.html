@@ -38,7 +38,7 @@
             </div>
         </header>
         <main>
-            <!-- <section class="hero pt-[60px] pb-[75px] md:pt-10 md:pb-[60px] lg:pb-20">
+            <section class="hero pt-[60px] pb-[75px] md:pt-10 md:pb-[60px] lg:pb-20">
                 <div
                     class="container flex flex-col gap-[50px_26px] md:flex-row md:items-center lg:gap-[0px_38px]"
                 >
@@ -50,7 +50,7 @@
                             <span>OVER 1000 USERS</span>
                         </div>
 
-                        <h1 class="hero__title mt-[5px] md:mt-0">
+                        <h1 class="title hero__title mt-[5px] md:mt-0">
                             Enjoy Foods Over <span>World</span>
                         </h1>
 
@@ -144,7 +144,10 @@
                     class="quality__container container flex flex-col items-center justify-center gap-y-[100px] md:flex-row md:gap-x-[200px] lg:gap-x-[287px]"
                 >
                     <div class="quality__info md:order-2">
-                        <h3 class="quality__title">Premium <span>Quality</span> For Your Health</h3>
+                        <h3 class="title quality__title">
+                            Premium <span>Quality</span> For Your Health
+                        </h3>
+
                         <ul class="quality__list mt-[37px]">
                             <li class="quality__item">
                                 Premium quality food is made with ingredients that are packed with
@@ -194,11 +197,11 @@
                 </div>
 
                 <div class="divider mt-[60px] lg:mt-[110px]"></div>
-            </section> -->
+            </section>
 
             <section class="restaurants pt-[84px]">
                 <div class="container flex flex-col items-end">
-                    <h1 class="restaurants__title mx-auto">Our Top <span>Restaurants</span></h1>
+                    <h1 class="title mx-auto">Our Top <span>Restaurants</span></h1>
 
                     <ul
                         class="restaurants__items restaurants__list mt-[60px] flex flex-col gap-y-10 md:flex-row md:gap-x-[22px] lg:gap-x-8"
@@ -316,6 +319,236 @@
                     </div>
                 </div>
                 <div class="divider mt-[66px]"></div>
+            </section>
+
+            <section class="dishes relative pt-20 pb-16">
+                <div class="container">
+                    <h1 class="title">Our Top <span>Dishes</span></h1>
+
+                    <ul class="mt-16 grid grid-cols-2 gap-[42px_22px] md:grid-cols-5">
+                        <li class="item">
+                            <img
+                                src="/src/img/dishes/dishes__icon-2.svg"
+                                alt="favorite"
+                                width="14"
+                                class="item__favorite"
+                            />
+                            <img
+                                src="/src/img/dishes/dishes__img-4.png"
+                                alt="item from menu"
+                                height="120"
+                                class="item__img"
+                            />
+
+                            <div class="item__info">
+                                <div class="item__category">Healthy</div>
+                                <h4 class="item__name">Chicken Hell</h4>
+
+                                <div class="item__meta flex gap-x-1">
+                                    <span class="item__time">24min</span>
+
+                                    <img
+                                        src="/src/img/restaurants/restaurant__star.svg"
+                                        alt="star"
+                                        width="10"
+                                        class="item__rating-star"
+                                    />
+
+                                    <span class="item__rating-value">4.8</span>
+                                </div>
+
+                                <div class="item__price flex items-center">
+                                    <div class="grow">$12<span>.99</span></div>
+                                    <img
+                                        src="/src/img/dishes/dishes__icon-1.svg"
+                                        alt="bookmark"
+                                        width="28"
+                                        class="item__bookmark"
+                                    />
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <img
+                                src="/src/img/dishes/dishes__icon-2.svg"
+                                alt="favorite"
+                                width="14"
+                                class="item__favorite"
+                            />
+                            <img
+                                src="/src/img/dishes/dishes__img-3.png"
+                                alt="item from menu"
+                                height="120"
+                                class="item__img"
+                            />
+
+                            <div class="item__info">
+                                <div class="item__category item__category--trending">Trending</div>
+                                <h4 class="item__name">Swe Dish</h4>
+
+                                <div class="item__meta flex gap-x-1">
+                                    <span class="item__time">34min</span>
+
+                                    <img
+                                        src="/src/img/restaurants/restaurant__star.svg"
+                                        alt="star"
+                                        width="10"
+                                        class="item__rating-star"
+                                    />
+
+                                    <span class="item__rating-value">4.9</span>
+                                </div>
+
+                                <div class="item__price flex items-center">
+                                    <div class="grow">$19<span>.99</span></div>
+                                    <img
+                                        src="/src/img/dishes/dishes__icon-1.svg"
+                                        alt="bookmark"
+                                        width="28"
+                                        class="item__bookmark"
+                                    />
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <img
+                                src="/src/img/dishes/dishes__icon-2.svg"
+                                alt="favorite"
+                                width="14"
+                                class="item__favorite"
+                            />
+                            <img
+                                src="/src/img/dishes/dishes__img-2.png"
+                                alt="item from menu"
+                                height="120"
+                                class="item__img"
+                            />
+
+                            <div class="item__info">
+                                <div class="item__category item__category--supreme">Supreme</div>
+                                <h4 class="item__name">Swe Dish</h4>
+
+                                <div class="item__meta flex gap-x-1">
+                                    <span class="item__time">34min</span>
+
+                                    <img
+                                        src="/src/img/restaurants/restaurant__star.svg"
+                                        alt="star"
+                                        width="10"
+                                        class="item__rating-star"
+                                    />
+
+                                    <span class="item__rating-value">4.9</span>
+                                </div>
+
+                                <div class="item__price flex items-center">
+                                    <div class="grow">$19<span>.99</span></div>
+                                    <img
+                                        src="/src/img/dishes/dishes__icon-1.svg"
+                                        alt="bookmark"
+                                        width="28"
+                                        class="item__bookmark"
+                                    />
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item">
+                            <img
+                                src="/src/img/dishes/dishes__icon-2.svg"
+                                alt="favorite"
+                                width="14"
+                                class="item__favorite"
+                            />
+                            <img
+                                src="/src/img/dishes/dishes__img-4.png"
+                                alt="item from menu"
+                                height="120"
+                                class="item__img"
+                            />
+
+                            <div class="item__info">
+                                <div class="item__category">Healthy</div>
+                                <h4 class="item__name">Chicken Hell</h4>
+
+                                <div class="item__meta flex gap-x-1">
+                                    <span class="item__time">24min</span>
+
+                                    <img
+                                        src="/src/img/restaurants/restaurant__star.svg"
+                                        alt="star"
+                                        width="10"
+                                        class="item__rating-star"
+                                    />
+
+                                    <span class="item__rating-value">4.8</span>
+                                </div>
+
+                                <div class="item__price flex items-center">
+                                    <div class="grow">$12<span>.99</span></div>
+                                    <img
+                                        src="/src/img/dishes/dishes__icon-1.svg"
+                                        alt="bookmark"
+                                        width="28"
+                                        class="item__bookmark"
+                                    />
+                                </div>
+                            </div>
+                        </li>
+                        <li class="item hidden md:list-item">
+                            <img
+                                src="/src/img/dishes/dishes__icon-2.svg"
+                                alt="favorite"
+                                width="14"
+                                class="item__favorite"
+                            />
+                            <img
+                                src="/src/img/dishes/dishes__img-3.png"
+                                alt="item from menu"
+                                height="120"
+                                class="item__img"
+                            />
+
+                            <div class="item__info">
+                                <div class="item__category item__category--trending">Trending</div>
+                                <h4 class="item__name">Swe Dish</h4>
+
+                                <div class="item__meta flex gap-x-1">
+                                    <span class="item__time">34min</span>
+
+                                    <img
+                                        src="/src/img/restaurants/restaurant__star.svg"
+                                        alt="star"
+                                        width="10"
+                                        class="item__rating-star"
+                                    />
+
+                                    <span class="item__rating-value">4.9</span>
+                                </div>
+
+                                <div class="item__price flex items-center">
+                                    <div class="grow">$19<span>.99</span></div>
+                                    <img
+                                        src="/src/img/dishes/dishes__icon-1.svg"
+                                        alt="bookmark"
+                                        width="28"
+                                        class="item__bookmark"
+                                    />
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+                    <div class="dishes__more mt-16 flex items-center justify-end gap-x-5">
+                        <a href="/" class="dishes__view-all">View All</a>
+                        <img
+                            src="/src/img/restaurants/restaurant__arrow.svg"
+                            alt="arrow"
+                            class="dishes__arrow"
+                            width="16"
+                        />
+                    </div>
+                </div>
+                <div class="divider absolute bottom-0"></div>
             </section>
         </main>
         <footer></footer>

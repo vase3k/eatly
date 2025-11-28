@@ -1,7 +1,11 @@
-@forward "/src/sass/blocks/header";
+@forward "/src/sass/blocks/item";
+@forward "/src/sass/blocks/title";
 @forward "/src/sass/blocks/divider";
-@forward "/src/sass/blocks/hero";
 @forward "/src/sass/blocks/button";
+
+@forward "/src/sass/blocks/header";
+@forward "/src/sass/blocks/hero";
 @forward "/src/sass/blocks/feature";
 @forward "/src/sass/blocks/quality";
 @forward "/src/sass/blocks/restaurants";
+@forward "/src/sass/blocks/dishes";

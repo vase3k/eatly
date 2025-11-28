@@ -5,6 +5,17 @@
 .quality {
     &__container {
     }
+    &__title {
+        @include md {
+            width: 372px;
+            text-align: start;
+            font-size: 36px;
+        }
+        @include lg {
+            font-size: 50px;
+            width: 510px;
+        }
+    }
     &__info {
         @include md {
             flex-basis: 394px;
@@ -12,25 +23,6 @@
 
         @include lg {
             flex-basis: 560px;
-        }
-    }
-    &__title {
-        font-family: $font-family;
-        font-weight: 700;
-        font-size: 30px;
-        line-height: 1.2;
-        text-transform: capitalize;
-        text-align: center;
-        color: $carbon-text;
-        span {
-            color: $main;
-        }
-        @include md {
-            font-size: 36px;
-            text-align: start;
-        }
-        @include lg {
-            font-size: 50px;
         }
     }
     &__list {

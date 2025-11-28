@@ -1,0 +1,125 @@
+@use "/src/sass/helpers/media" as *;
+@use "/src/sass/helpers/mixins" as *;
+@use "/src/sass/helpers/variables" as *;
+
+.item {
+    position: relative;
+    padding: 20px 15px;
+    border: 1px solid $white-bg-card;
+    border-radius: 23px;
+    box-shadow: 4px 54px 27px 0 rgba(229, 229, 229, 0.7);
+    background: $white;
+
+    @include lg {
+        padding: 29px 23px;
+    }
+    &__favorite {
+        position: absolute;
+        top: 15px;
+        right: 15px;
+        @include lg {
+            top: 21px;
+            right: 21px;
+            width: 21px;
+        }
+    }
+    &__img {
+        width: 120px;
+        height: 120px;
+        object-fit: cover;
+        object-position: center;
+        @include md {
+            width: 143px;
+            height: 143px;
+        }
+        @include lg {
+            width: 185px;
+            height: 185px;
+        }
+    }
+    &__category {
+        width: fit-content;
+        font-size: 7px;
+        color: $golden-text;
+        background-color: $golden-accent;
+        border-radius: 3px;
+        padding: 2px 5px;
+        @include md {
+            font-size: 8px;
+        }
+        @include lg {
+            font-size: 11px;
+        }
+        &--trending {
+            color: $red-accent;
+            background: $blush-accent;
+        }
+        &--supreme {
+            color: $green-accent;
+            background: rgba($jade-text, 0.2);
+        }
+    }
+    &__name {
+        margin-top: 3px;
+        font-weight: 600;
+        font-size: 15px;
+        color: $gunmetal-text;
+        @include md {
+            font-size: 16px;
+        }
+        @include lg {
+            font-size: 23px;
+        }
+    }
+    &__meta {
+        margin-top: 2px;
+    }
+    &__rating-star {
+        @include lg {
+            width: 23px;
+        }
+    }
+    &__time,
+    &__rating-value {
+        font-family: $third-family;
+        font-size: 11px;
+        color: $gray-text;
+        @include md {
+            font-size: 12px;
+        }
+        @include lg {
+            font-size: 17px;
+        }
+    }
+    &__price {
+        margin-top: 9px;
+        font-family: $third-family;
+        font-weight: 700;
+        font-size: 16px;
+        color: $gunmetal-text;
+        span {
+            font-size: 12px;
+            color: $gray-text;
+        }
+        @include md {
+            font-size: 18px;
+            span {
+                font-size: 13px;
+            }
+        }
+        @include lg {
+            font-size: 25px;
+            span {
+                font-size: 18px;
+            }
+        }
+    }
+    &__bookmark {
+        @include md {
+            width: 31px;
+        }
+        @include lg {
+            width: 43px;
+        }
+    }
+}

@@ -56,7 +56,7 @@ export default defineConfig({
         }),
         convertWebp({
             inputDir: "dist",
-            width: 180,
+            width: 1440,
             quality: 80,
             excludeFolder: ["images"],
         }),

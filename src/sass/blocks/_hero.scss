@@ -26,25 +26,13 @@
     }
 
     &__title {
-        font-family: $font-family;
-        font-weight: 600;
         font-size: 46px;
-        line-height: 1.2;
-        letter-spacing: -0.04em;
-        text-align: center;
-        color: $dark-text;
-        & span {
-            color: $purple-bg;
-        }
-
         @include md {
-            font-size: 53px;
             text-align: start;
+            font-size: 53px;
         }
-
         @include lg {
             font-size: 75px;
-            letter-spacing: -0.04em;
         }
     }
 
