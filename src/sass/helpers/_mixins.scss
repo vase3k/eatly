@@ -3,30 +3,17 @@
 @use "sass:math";
 
 @function fluid($min, $max) {
-    $maxViewportWidth: strip-px($lg);
-    $minViewportWidth: strip-px($sm);
+    $minViewport: math.div($sm, 1px);
+    $maxViewport: math.div($lg, 1px);
 
-    $maxSize: math.div($max, 16);
-    $minSize: math.div($min, 16);
-    $maxWidth: math.div($maxViewportWidth, 16);
-    $minWidth: math.div($minViewportWidth, 16);
+    $slope: math.div(($max - $min), ($maxViewport - $minViewport));
+    $yAxisIntersection: -$minViewport * $slope + $min;
 
-    $slope: math.div(($maxSize - $minSize), ($maxWidth - $minWidth));
-    $yAxisIntersection: -$minWidth * $slope + $minSize;
-
-    @return clamp(
-        #{$minSize * 1rem},
-        #{$yAxisIntersection * 1rem} + #{$slope * 100vw},
-        #{$maxSize * 1rem}
-    );
+    @return clamp(#{$min}px, calc(#{$yAxisIntersection}px + #{$slope * 100}vw), #{$max}px);
 }
 
 @mixin text-fluid($min, $max) {
     font-size: fluid($min, $max);
-}
-
-@function strip-px($value) {
-    @return math.div($value, 1px);
 }
 
 @mixin hide {
