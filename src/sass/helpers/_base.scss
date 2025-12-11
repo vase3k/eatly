@@ -2,28 +2,32 @@
 @use "/src/sass/helpers/mixins" as *;
 @use "/src/sass/helpers/variables" as *;
 
-html {
-    font-family: $font-family, sans-serif;
-    font-size: 16px;
-    font-weight: 400;
-    letter-spacing: 0px;
-    background-color: $white-bg;
-    scrollbar-gutter: stable;
+@layer base {
+	html {
+		font-family: $font-family, sans-serif;
+		font-size: 16px;
+		font-weight: 400;
+		letter-spacing: 0;
+		background-color: $white-bg;
+		scrollbar-gutter: stable;
+	}
 }
 
-$paddingWidth: calc(fluid(5, 10) * 2);
+@layer utilities {
+	$paddingWidth: fluid(5, 10);
 
-.container {
-    margin: 0 auto;
-    padding: 0 fluid(5, 10);
-    max-width: calc(314px + $paddingWidth);
-    width: 100%;
-    @include md {
-        max-width: calc(888px + $paddingWidth);
-    }
-    @include lg {
-        max-width: calc(1246px + $paddingWidth);
-    }
+	.container {
+		width: 100%;
+		max-width: calc(314px + $paddingWidth);
+		margin: 0 auto;
+		padding: 0 $paddingWidth;
+		@include md {
+			max-width: calc(888px + $paddingWidth * 2);
+		}
+		@include lg {
+			max-width: calc(1248px + $paddingWidth * 2);
+		}
+	}
 }
 
 // lg 1440px 1246px

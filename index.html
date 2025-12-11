@@ -1,557 +1,91 @@
 <!doctype html>
-<html lang="en">
-    <head>
-        <meta charset="UTF-8" />
-        <link rel="icon" type="image/svg+xml" href="/vite.svg" />
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Eatly | Home</title>
-    </head>
+<html lang='ru'>
+<head>
+	<meta charset='UTF-8' />
+	<meta
+		content='width=device-width, initial-scale=1.0'
+		name='viewport'
+	/>
+	<title>Eatly | Home</title>
+</head>
 
-    <body>
-        <header class="header pt-[30px] lg:pt-12">
-            <div class="container flex items-center justify-between gap-x-[100px]">
-                <div class="header__logo w-[110px] md:max-lg:w-20">
-                    <img src="/src/img/header/header__logo.svg" alt="eatly logo" />
-                </div>
-                <ul
-                    class="header__nav z-1 md:flex md:grow md:gap-x-[38px] lg:gap-x-[52px]"
-                    role="navigation"
-                    data-js-header-nav
-                >
-                    <li><a href="/" class="header__link">Menu</a></li>
-                    <li><a href="/" class="header__link">Blog</a></li>
-                    <li><a href="/" class="header__link">Pricing</a></li>
-                    <li><a href="/" class="header__link">Contact</a></li>
-                </ul>
-                <div class="header__buttons hidden items-center gap-x-[25px] md:flex">
-                    <a href="/" class="header__login">Login</a>
-                    <button type="button" class="header__button">Sign up</button>
-                </div>
-                <div class="header__close relative z-1 md:hidden" data-js-close>
-                    <div class="header__close-bar"></div>
-                    <div class="header__close-bar"></div>
-                    <div class="header__close-bar"></div>
-                </div>
-            </div>
-            <div class="container">
-                <div class="divider mt-[30px] md:mt-[18px] lg:mt-[25px]"></div>
-            </div>
-        </header>
-        <main>
-            <section class="hero pt-[60px] pb-[75px] md:pt-10 md:pb-[60px] lg:pb-20">
-                <div
-                    class="container flex flex-col gap-[50px_26px] md:flex-row md:items-center lg:gap-[0px_38px]"
-                >
-                    <div
-                        class="flex flex-col items-center md:shrink-0 md:basis-[404px] md:items-start md:gap-y-6 lg:basis-[568px] lg:gap-y-[35px]"
-                    >
-                        <div class="hero__subtitle">
-                            <div class="divider"></div>
-                            <span>OVER 1000 USERS</span>
-                        </div>
+<body>
+<header class='header relative'>
+	<div class='header__container container'>
+		<img
+			alt='company logo'
+			class='header__logo'
+			height='43'
+			loading='lazy'
+			src='/src/img/header/header__logo.svg'
+			width='112'
+		/>
 
-                        <h1 class="title hero__title mt-[5px] md:mt-0">
-                            Enjoy Foods Over <span>World</span>
-                        </h1>
+		<ul
+			class='header__nav'
+			data-active
+			data-js-header-nav
+			role='listbox'
+		>
+			<li>
+				<a
+					class='header__link'
+					href='/'
+				>Menu
+				</a>
+			</li>
+			<li>
+				<a
+					class='header__link'
+					href='/'
+				>Blog
+				</a>
+			</li>
+			<li>
+				<a
+					class='header__link'
+					href='/'
+				>Pricing
+				</a>
+			</li>
+			<li>
+				<a
+					class='header__link'
+					href='/'
+				>Contact
+				</a>
+			</li>
+		</ul>
 
-                        <p class="hero__descr mt-[15px] md:mt-0">
-                            Eatly help you set saving goals, earn cash back offers, Go to disclaimer
-                            for more details and get paychecks up to two days early. Get a
-                            <span>$20 bonus.</span>
-                        </p>
-
-                        <div class="hero__buttons mt-[42px] flex gap-x-[15px] md:mt-0">
-                            <button type="button" class="button">Get Started</button>
-                            <button type="button" class="button button--white">Go Pro</button>
-                        </div>
-
-                        <div class="mt-[26px] flex items-end gap-x-3 md:mt-0">
-                            <img
-                                src="/src/img/hero/hero__stars.svg"
-                                alt="trustpilot rating"
-                                width="99"
-                                class=""
-                            />
-                            <img
-                                src="/src/img/hero/hero__star.svg"
-                                alt="5 stars rating"
-                                width="77"
-                                class="self-center"
-                            />
-                            <span class="hero__stars-text">4900+</span>
-                        </div>
-                    </div>
-
-                    <div class="relative md:shrink-0 md:basis-[484px] lg:basis-[680px]">
-                        <div>
-                            <img src="/src/img/hero/hero__plate.png" alt="plate with decorations" />
-                        </div>
-
-                        <div class="hero__top-element absolute flex items-center justify-between">
-                            <div class="basis-[38px] md:basis-14 lg:basis-[74px]">
-                                <img
-                                    src="/src/img/hero/hero__icon-item.png"
-                                    alt="icon with plate"
-                                />
-                            </div>
-
-                            <div class="grow">
-                                <div class="hero__top-element-title">Chicken Hell</div>
-                                <div class="hero__top-element-subtitle">On The Way</div>
-                            </div>
-
-                            <div class="hero__top-element-time self-end">3:09 PM</div>
-                        </div>
-
-                        <div class="hero__bottom-element absolute flex items-center">
-                            <img src="/src/img/hero/hero__graphic.png" alt="graph" />
-                        </div>
-                    </div>
-                </div>
-            </section>
-
-            <section
-                class="feature relative flex justify-center py-[100px] md:py-[35px] lg:py-[50px]"
-            >
-                <div
-                    class="flex basis-[246px] flex-col gap-x-12 gap-y-[60px] md:basis-[670px] md:flex-row lg:basis-[942px] lg:gap-x-[66px]"
-                >
-                    <div class="text-center">
-                        <h2 class="feature__item-title">10K+</h2>
-                        <p class="feature__item-text mt-2.5">
-                            Satisfied Costumers All Great Over The World
-                        </p>
-                    </div>
-                    <div class="feature__divider divider"></div>
-                    <div class="text-center">
-                        <h2 class="feature__item-title">4M</h2>
-                        <p class="feature__item-text mt-2.5">
-                            Healthy Dishes Sold Including Milk Shakes Smooth
-                        </p>
-                    </div>
-                    <div class="feature__divider divider"></div>
-                    <div class="text-center">
-                        <h2 class="feature__item-title">99.99%</h2>
-                        <p class="feature__item-text mt-2.5">
-                            Reliable Customer Support We Provide Great Experiences
-                        </p>
-                    </div>
-                </div>
-            </section>
-
-            <section class="quality gap-y-2 py-[70px] lg:py-[100px]">
-                <div
-                    class="quality__container container flex flex-col items-center justify-center gap-y-[100px] md:flex-row md:gap-x-[200px] lg:gap-x-[287px]"
-                >
-                    <div class="quality__info md:order-2">
-                        <h3 class="title quality__title">
-                            Premium <span>Quality</span> For Your Health
-                        </h3>
-
-                        <ul class="quality__list mt-[37px]">
-                            <li class="quality__item">
-                                Premium quality food is made with ingredients that are packed with
-                                essential vitamins, minerals.
-                            </li>
-                            <li class="quality__item mt-4">
-                                These foods promote overall wellness by support healthy digestion
-                                and boosting immunity
-                            </li>
-                        </ul>
-                        <button
-                            type="button"
-                            class="quality__button button mx-auto mt-[35px] md:mx-0"
-                        >
-                            Download
-                            <svg
-                                width="12"
-                                height="12"
-                                viewBox="0 0 12 12"
-                                xmlns="http://www.w3.org/2000/svg"
-                                class="arrow-icon active:text-[#6c5fbc] lg:h-auto lg:w-4"
-                            >
-                                <path
-                                    d="M0.738281 5.91326H11.0847M11.0847 5.91326L5.9112 0.739258M11.0847 5.91326L5.9112 11.0856"
-                                    stroke="currentColor"
-                                    stroke-width="1.47805"
-                                    stroke-linecap="round"
-                                    stroke-linejoin="round"
-                                />
-                            </svg>
-                        </button>
-                    </div>
-
-                    <div class="quality__phone phone relative">
-                        <img
-                            class="quality__phone-img"
-                            src="/src/img/quality/quality__phone.png"
-                            alt="phone picture"
-                        />
-                        <img
-                            class="quality__element absolute"
-                            src="/src/img/quality/quality__element-2.svg"
-                            alt="decoration element"
-                            width="30"
-                        />
-                    </div>
-                </div>
-
-                <div class="divider mt-[60px] lg:mt-[110px]"></div>
-            </section>
-
-            <section class="restaurants pt-[84px]">
-                <div class="container flex flex-col items-end">
-                    <h1 class="title mx-auto">Our Top <span>Restaurants</span></h1>
-
-                    <ul
-                        class="restaurants__items restaurants__list mt-[60px] flex flex-col gap-y-10 md:flex-row md:gap-x-[22px] lg:gap-x-8"
-                    >
-                        <li class="restaurants__item">
-                            <img
-                                src="/src/img/restaurants/restaurant__img-1.png"
-                                alt="item from menu"
-                                height="176"
-                                class="restaurants__img"
-                            />
-
-                            <div class="restaurants__info">
-                                <div class="restaurants__category">Healthy</div>
-                                <h4 class="restaurants__name">The Chicken King</h4>
-
-                                <div class="restaurants__meta flex items-end gap-x-1.5">
-                                    <span class="restaurants__time">24min</span>
-
-                                    <img
-                                        src="/src/img/restaurants/restaurant__star.svg"
-                                        alt="star"
-                                        width="25"
-                                        class="restaurants__rating-star"
-                                    />
-
-                                    <span class="restaurants__rating-value grow">4.8</span>
-
-                                    <img
-                                        src="/src/img/restaurants/restaurant__bookmark.svg"
-                                        alt="bookmark"
-                                        width="40"
-                                        class="restaurants__bookmark"
-                                    />
-                                </div>
-                            </div>
-                        </li>
-                        <li class="restaurants__item">
-                            <img
-                                src="/src/img/restaurants/restaurant__img-2.png"
-                                alt="item from menu"
-                                class="restaurants__img"
-                            />
-
-                            <div class="restaurants__info px-8 pt-2.5 pb-4.5">
-                                <div class="restaurants__category restaurants__category--trending">
-                                    Trending
-                                </div>
-                                <h4 class="restaurants__name">The Chicken King</h4>
-
-                                <div class="restaurants__meta flex items-end gap-x-1.5">
-                                    <span class="restaurants__time">24min</span>
-
-                                    <img
-                                        src="/src/img/restaurants/restaurant__star.svg"
-                                        alt="star"
-                                        width="25"
-                                        class="restaurants__rating-star"
-                                    />
-
-                                    <span class="restaurants__rating-value grow">4.9</span>
-
-                                    <img
-                                        src="/src/img/restaurants/restaurant__bookmark.svg"
-                                        alt="bookmark"
-                                        width="40"
-                                        class="restaurants__bookmark"
-                                    />
-                                </div>
-                            </div>
-                        </li>
-                        <li class="restaurants__item">
-                            <img
-                                src="/src/img/restaurants/restaurant__img-1.png"
-                                alt="item from menu"
-                                height="176"
-                                class="restaurants__img"
-                            />
-
-                            <div class="restaurants__info px-8 pt-2.5 pb-4.5">
-                                <div class="restaurants__category">Healthy</div>
-                                <h4 class="restaurants__name">The Chicken King</h4>
-
-                                <div class="restaurants__meta flex items-end gap-x-1.5">
-                                    <span class="restaurants__time">24min</span>
-
-                                    <img
-                                        src="/src/img/restaurants/restaurant__star.svg"
-                                        alt="star"
-                                        width="25"
-                                        class="restaurants__rating-star"
-                                    />
-
-                                    <span class="restaurants__rating-value grow">4.8</span>
-
-                                    <img
-                                        src="/src/img/restaurants/restaurant__bookmark.svg"
-                                        alt="bookmark"
-                                        width="40"
-                                        class="restaurants__bookmark"
-                                    />
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <div class="restaurants__more mt-[62px] flex items-center gap-x-5">
-                        <a href="/" class="restaurants__more-link">View All</a>
-                        <img
-                            src="/src/img/restaurants/restaurant__arrow.svg"
-                            alt="arrow"
-                            class="restaurants__more-arrow"
-                            width="16"
-                        />
-                    </div>
-                </div>
-                <div class="divider mt-[66px]"></div>
-            </section>
-
-            <section class="dishes relative pt-20 pb-16">
-                <div class="container">
-                    <h1 class="title">Our Top <span>Dishes</span></h1>
-
-                    <ul class="mt-16 grid grid-cols-2 gap-[42px_22px] md:grid-cols-5">
-                        <li class="item">
-                            <img
-                                src="/src/img/dishes/dishes__icon-2.svg"
-                                alt="favorite"
-                                width="14"
-                                class="item__favorite"
-                            />
-                            <img
-                                src="/src/img/dishes/dishes__img-4.png"
-                                alt="item from menu"
-                                height="120"
-                                class="item__img"
-                            />
-
-                            <div class="item__info">
-                                <div class="item__category">Healthy</div>
-                                <h4 class="item__name">Chicken Hell</h4>
-
-                                <div class="item__meta flex gap-x-1">
-                                    <span class="item__time">24min</span>
-
-                                    <img
-                                        src="/src/img/restaurants/restaurant__star.svg"
-                                        alt="star"
-                                        width="10"
-                                        class="item__rating-star"
-                                    />
-
-                                    <span class="item__rating-value">4.8</span>
-                                </div>
-
-                                <div class="item__price flex items-center">
-                                    <div class="grow">$12<span>.99</span></div>
-                                    <img
-                                        src="/src/img/dishes/dishes__icon-1.svg"
-                                        alt="bookmark"
-                                        width="28"
-                                        class="item__bookmark"
-                                    />
-                                </div>
-                            </div>
-                        </li>
-                        <li class="item">
-                            <img
-                                src="/src/img/dishes/dishes__icon-2.svg"
-                                alt="favorite"
-                                width="14"
-                                class="item__favorite"
-                            />
-                            <img
-                                src="/src/img/dishes/dishes__img-3.png"
-                                alt="item from menu"
-                                height="120"
-                                class="item__img"
-                            />
-
-                            <div class="item__info">
-                                <div class="item__category item__category--trending">Trending</div>
-                                <h4 class="item__name">Swe Dish</h4>
-
-                                <div class="item__meta flex gap-x-1">
-                                    <span class="item__time">34min</span>
-
-                                    <img
-                                        src="/src/img/restaurants/restaurant__star.svg"
-                                        alt="star"
-                                        width="10"
-                                        class="item__rating-star"
-                                    />
-
-                                    <span class="item__rating-value">4.9</span>
-                                </div>
-
-                                <div class="item__price flex items-center">
-                                    <div class="grow">$19<span>.99</span></div>
-                                    <img
-                                        src="/src/img/dishes/dishes__icon-1.svg"
-                                        alt="bookmark"
-                                        width="28"
-                                        class="item__bookmark"
-                                    />
-                                </div>
-                            </div>
-                        </li>
-                        <li class="item">
-                            <img
-                                src="/src/img/dishes/dishes__icon-2.svg"
-                                alt="favorite"
-                                width="14"
-                                class="item__favorite"
-                            />
-                            <img
-                                src="/src/img/dishes/dishes__img-2.png"
-                                alt="item from menu"
-                                height="120"
-                                class="item__img"
-                            />
-
-                            <div class="item__info">
-                                <div class="item__category item__category--supreme">Supreme</div>
-                                <h4 class="item__name">Swe Dish</h4>
-
-                                <div class="item__meta flex gap-x-1">
-                                    <span class="item__time">34min</span>
-
-                                    <img
-                                        src="/src/img/restaurants/restaurant__star.svg"
-                                        alt="star"
-                                        width="10"
-                                        class="item__rating-star"
-                                    />
-
-                                    <span class="item__rating-value">4.9</span>
-                                </div>
-
-                                <div class="item__price flex items-center">
-                                    <div class="grow">$19<span>.99</span></div>
-                                    <img
-                                        src="/src/img/dishes/dishes__icon-1.svg"
-                                        alt="bookmark"
-                                        width="28"
-                                        class="item__bookmark"
-                                    />
-                                </div>
-                            </div>
-                        </li>
-                        <li class="item">
-                            <img
-                                src="/src/img/dishes/dishes__icon-2.svg"
-                                alt="favorite"
-                                width="14"
-                                class="item__favorite"
-                            />
-                            <img
-                                src="/src/img/dishes/dishes__img-4.png"
-                                alt="item from menu"
-                                height="120"
-                                class="item__img"
-                            />
-
-                            <div class="item__info">
-                                <div class="item__category">Healthy</div>
-                                <h4 class="item__name">Chicken Hell</h4>
-
-                                <div class="item__meta flex gap-x-1">
-                                    <span class="item__time">24min</span>
-
-                                    <img
-                                        src="/src/img/restaurants/restaurant__star.svg"
-                                        alt="star"
-                                        width="10"
-                                        class="item__rating-star"
-                                    />
-
-                                    <span class="item__rating-value">4.8</span>
-                                </div>
-
-                                <div class="item__price flex items-center">
-                                    <div class="grow">$12<span>.99</span></div>
-                                    <img
-                                        src="/src/img/dishes/dishes__icon-1.svg"
-                                        alt="bookmark"
-                                        width="28"
-                                        class="item__bookmark"
-                                    />
-                                </div>
-                            </div>
-                        </li>
-                        <li class="item hidden md:list-item">
-                            <img
-                                src="/src/img/dishes/dishes__icon-2.svg"
-                                alt="favorite"
-                                width="14"
-                                class="item__favorite"
-                            />
-                            <img
-                                src="/src/img/dishes/dishes__img-3.png"
-                                alt="item from menu"
-                                height="120"
-                                class="item__img"
-                            />
-
-                            <div class="item__info">
-                                <div class="item__category item__category--trending">Trending</div>
-                                <h4 class="item__name">Swe Dish</h4>
-
-                                <div class="item__meta flex gap-x-1">
-                                    <span class="item__time">34min</span>
-
-                                    <img
-                                        src="/src/img/restaurants/restaurant__star.svg"
-                                        alt="star"
-                                        width="10"
-                                        class="item__rating-star"
-                                    />
-
-                                    <span class="item__rating-value">4.9</span>
-                                </div>
-
-                                <div class="item__price flex items-center">
-                                    <div class="grow">$19<span>.99</span></div>
-                                    <img
-                                        src="/src/img/dishes/dishes__icon-1.svg"
-                                        alt="bookmark"
-                                        width="28"
-                                        class="item__bookmark"
-                                    />
-                                </div>
-                            </div>
-                        </li>
-                    </ul>
-
-                    <div class="dishes__more mt-16 flex items-center justify-end gap-x-5">
-                        <a href="/" class="dishes__view-all">View All</a>
-                        <img
-                            src="/src/img/restaurants/restaurant__arrow.svg"
-                            alt="arrow"
-                            class="dishes__arrow"
-                            width="16"
-                        />
-                    </div>
-                </div>
-                <div class="divider absolute bottom-0"></div>
-            </section>
-        </main>
-        <footer></footer>
-        <script type="module" src="/src/js/script.js"></script>
-    </body>
+		<div class='header__buttons-group'>
+			<button
+				class='header__login'
+				type='button'
+			>Login
+			</button>
+			<button
+				class='header__signup'
+				type='button'
+			>Sign up
+			</button>
+		</div>
+		<div
+			class='header__close relative'
+			data-active
+			data-js-close
+		>
+			<div class='header__close-bar'></div>
+			<div class='header__close-bar'></div>
+			<div class='header__close-bar'></div>
+		</div>
+		<div class='divider'></div>
+	</div>
+</header>
+<main></main>
+<footer class='footer'></footer>
+<script
+	src='/src/js/script.js'
+	type='module'
+></script>
+</body>
 </html>

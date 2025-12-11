@@ -1,8 +1,9 @@
-@use "/src/sass/helpers/media" as *;
-@use "/src/sass/helpers/mixins" as *;
-@use "/src/sass/helpers/variables" as *;
+@use '../helpers/variables' as *;
 
-.divider {
-    background-color: $gray-divider;
-    height: 1px;
+@layer components {
+	.divider {
+		width: 100%;
+		height: 2px;
+		background-color: $gray-divider;
+	}
 }
