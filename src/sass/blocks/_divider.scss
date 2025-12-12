@@ -3,7 +3,7 @@
 @layer components {
 	.divider {
 		width: 100%;
-		height: 2px;
-		background-color: $gray-divider;
+		height: 1px;
+		background-color: rgba($gray-divider, 0.2);
 	}
 }
