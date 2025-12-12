@@ -2,6 +2,8 @@
 @use "/src/sass/helpers/mixins" as *;
 @use "/src/sass/helpers/variables" as *;
 
+@layer properties, theme, base, components, utilities, override;
+
 @layer base {
 	html {
 		font-family: $font-family, sans-serif;
@@ -13,7 +15,7 @@
 	}
 }
 
-@layer utilities {
+@layer override {
 	$paddingWidth: fluid(5, 10);
 
 	.container {

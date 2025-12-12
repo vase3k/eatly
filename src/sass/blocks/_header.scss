@@ -91,17 +91,6 @@
 		}
 
 		&__signup {
-			@include md {
-				padding-block: 12px;
-				padding-inline: 19px;
-			}
-			@include lg {
-				padding: 18px 27px;
-			}
-			color: $white-bg;
-			border-radius: 18px;
-			background-color: $main;
-			@include hover-opacity;
 		}
 
 		&__close {
@@ -145,7 +134,7 @@
 				position: absolute;
 				top: 100%;
 				left: 50%;
-				translate: -50% 0;
+				translate: -50% -100%;
 
 				.header__close[data-active] & {
 					top: 50%;

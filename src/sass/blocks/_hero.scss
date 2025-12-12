@@ -1,0 +1,235 @@
+@use '../helpers/variables' as *;
+@use '../helpers/mixins' as *;
+@use '../helpers/media' as *;
+
+@layer components {
+	.hero {
+		margin-top: 50px;
+		margin-bottom: 50px;
+
+		&__container {
+			display: flex;
+			gap: 50px;
+			flex-direction: column;
+			@include md {
+				flex-direction: row;
+				justify-content: space-between;
+			}
+		}
+
+		&__inner {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			justify-content: center;
+			text-align: center;
+			gap: 20px 10px;
+			@include md {
+				gap: 20px 15px;
+				text-align: left;
+				align-content: center;
+				justify-content: start;
+			}
+			@include lg {
+				gap: 25px 20px;
+			}
+		}
+
+		&__plate {
+			position: relative;
+			@include md {
+				translate: 26px;
+			}
+			@include lg {
+				translate: 37px;
+			}
+
+
+			&-img {
+				width: 100%;
+			}
+
+			@include md {
+				flex-basis: 485px;
+				flex-shrink: 0;
+			}
+			@include lg {
+				flex-basis: 680px;
+			}
+		}
+
+		&__caption-divider {
+			display: inline-block;
+			max-width: 33px;
+			@include md {
+				max-width: 38px;
+			}
+			@include lg {
+				max-width: 45px;
+			}
+		}
+
+		&__caption-text {
+			font-size: 12px;
+			font-weight: 600;
+			line-height: 1.2;
+			display: inline-block;
+			letter-spacing: 0.13em;
+			color: $dark-text;
+			@include lg {
+				font-size: 15px;
+			}
+		}
+
+		&__subject {
+			font-size: 46px;
+			font-weight: 600;
+			line-height: 1.2;
+			flex-basis: 100%;
+			letter-spacing: -0.04em;
+			color: $dark-text;
+			@include md {
+				font-size: 54px;
+			}
+			@include lg {
+				font-size: 75px;
+			}
+		}
+
+		&__highlight {
+			color: $purple-bg;
+		}
+
+		&__text {
+			font-size: 12px;
+			color: rgba($dim-text, 0.7);
+			@include lg {
+				font-size: 18px;
+			}
+
+			&-highlight {
+				font-weight: 500;
+				color: rgba($purple-bg, 0.7);
+			}
+		}
+
+		&__annotation {
+			font-family: $font6;
+			font-weight: 500;
+			font-size: 12px;
+			color: rgba($outer-text, 0.7);
+		}
+
+		&__aside {
+			&-right {
+				position: absolute;
+				top: 15px;
+				right: 20px;
+				display: grid;
+				row-gap: 5px;
+				grid-template-areas:
+				"icon title ."
+				"icon subtitle time";
+				box-shadow: -5px 6px 10px 0 rgba(0, 0, 0, 0.15);
+				padding-block: 2px;
+				padding-inline: 8px;
+				border-radius: 8px;
+				background-color: $white;
+				@include md {
+					padding-inline: 12px;
+					padding-block: 4px;
+					top: 22px;
+					right: 28px;
+				}
+				@include lg {
+					padding-block: 8px;
+					top: 31px;
+					right: 41px;
+				}
+			}
+
+			&-thumb {
+				grid-area: icon;
+				margin-right: 8px;
+				@include md {
+					width: 56px;
+					margin-right: 13px;
+				}
+				@include lg {
+					width: 74px;
+					margin-right: 18px;
+				}
+			}
+
+			&-title {
+				grid-area: title;
+				font-weight: 600;
+				font-size: 7px;
+				color: $gunmetal-text;
+				align-self: end;
+				margin-right: 25px;
+				@include md {
+					margin-right: 30px;
+					font-size: 11px;
+				}
+				@include lg {
+					margin-right: 50px;
+					font-size: 15px;
+				}
+			}
+
+			&-subtitle {
+				grid-area: subtitle;
+				font-weight: 500;
+				font-size: 4px;
+				color: $gunmetal-text;
+				@include md {
+					font-size: 7px;
+				}
+				@include lg {
+					font-size: 9px;
+				}
+			}
+
+			&-time {
+				grid-area: time;
+				font-weight: 500;
+				font-size: 5px;
+				color: $mist-text;
+				align-self: end;
+				@include md {
+					font-size: 7px;
+				}
+				@include lg {
+					font-size: 11px;
+				}
+			}
+
+
+			&-left {
+				position: absolute;
+				box-shadow: 7px 9px 18px 0 rgba(26, 32, 44, 0.15);
+				background: $white;
+				border-radius: 8px;
+				width: 98px;
+				padding-block: 6px;
+				left: 17px;
+				bottom: 16px;
+				@include md {
+					left: 25px;
+					bottom: 25px;
+					width: 148px;
+				}
+				@include lg {
+					left: 36px;
+					bottom: 36px;
+					width: 206px;
+				}
+			}
+
+			&-img {
+				width: 100%;
+			}
+		}
+	}
+}

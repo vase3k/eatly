@@ -1,0 +1,26 @@
+@use '../helpers/variables' as *;
+@use '../helpers/mixins' as *;
+@use '../helpers/media' as *;
+
+@layer components {
+	.button {
+		@include lg {
+			padding-block: 18px;
+			padding-inline: 27px;
+			border-radius: 18px;
+		}
+		border-radius: 13px;
+		padding-block: 12px;
+		padding-inline: 20px;
+		color: $white-bg;
+		background-color: $main;
+		@include hover-opacity;
+
+		&--white {
+			background-color: $white-bg;
+			color: $main;
+			border: 1.20px solid $main;
+		}
+	}
+}
+

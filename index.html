@@ -8,9 +8,8 @@
 	/>
 	<title>Eatly | Home</title>
 </head>
-
 <body>
-<header class='header relative'>
+<header class='header'>
 	<div class='header__container container'>
 		<img
 			alt='company logo'
@@ -20,10 +19,8 @@
 			src='/src/img/header/header__logo.svg'
 			width='112'
 		/>
-
 		<ul
 			class='header__nav'
-			data-active
 			data-js-header-nav
 			role='listbox'
 		>
@@ -64,24 +61,110 @@
 			>Login
 			</button>
 			<button
-				class='header__signup'
+				class='header__signup button'
 				type='button'
 			>Sign up
 			</button>
 		</div>
-		<div
+		<nav
 			class='header__close relative'
-			data-active
 			data-js-close
 		>
 			<div class='header__close-bar'></div>
 			<div class='header__close-bar'></div>
 			<div class='header__close-bar'></div>
-		</div>
+		</nav>
 		<div class='divider'></div>
 	</div>
 </header>
-<main></main>
+<main>
+	<section class='hero'>
+		<div class='hero__container container'>
+			<div class='hero__inner'>
+
+				<span class='hero__caption-divider divider'></span>
+				<span class='hero__caption-text'>OVER 1000 USERS</span>
+
+				<h1 class='hero__subject'>Enjoy Foods Over
+					<span class='hero__highlight'>
+						World
+					</span>
+				</h1>
+				<p class='hero__text'>
+					Eatly help you set saving goals, earn cash back offers,
+					Go to disclaimer for more details and get paychecks up to two days early.
+					<span class='hero__text-highlight'>Get a $20 bonus.</span>
+				</p>
+				<div class='basis-full'>
+					<button
+						class='button mr-4'
+						type='button'
+					>
+						Get Started
+					</button>
+					<button
+						class='button button--white'
+						type='button'
+					>
+						Go Pro
+					</button>
+				</div>
+
+				<img
+					alt='trust review'
+					class='hero__trust'
+					height='24'
+					loading='lazy'
+					src='/src/img/hero/hero__stars.svg'
+					width='98'
+				/>
+				<img
+					alt='stars rating'
+					class='hero__stars'
+					height='12'
+					loading='lazy'
+					src='/src/img/hero/hero__star.svg'
+					width='77'
+				/>
+				<span class='hero__annotation'>4900+</span>
+
+			</div>
+			<div class='hero__plate'>
+				<img
+					alt='plate with food'
+					class='hero__plate-img'
+					height='288'
+					loading='lazy'
+					src='/src/img/hero/hero__plate.png'
+					width='324'
+				/>
+				<div class='hero__aside-right'>
+					<img
+						alt='plate with food'
+						class='hero__aside-thumb'
+						height='38'
+						loading='lazy'
+						src='/src/img/hero/hero__icon-item.png'
+						width='35'
+					/>
+					<span class='hero__aside-title'>Chicken Hell</span>
+					<span class='hero__aside-subtitle'>On The Way</span>
+					<span class='hero__aside-time'>3:09 PM</span>
+				</div>
+				<div class='hero__aside-left'>
+					<img
+						alt='company graph'
+						class='hero__aside-img'
+						height='86'
+						loading='lazy'
+						src='/src/img/hero/hero__graphic.png'
+						width='98'
+					/>
+				</div>
+			</div>
+		</div>
+	</section>
+</main>
 <footer class='footer'></footer>
 <script
 	src='/src/js/script.js'
