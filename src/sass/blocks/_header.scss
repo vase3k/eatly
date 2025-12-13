@@ -1,6 +1,4 @@
-@use '../helpers/variables' as *;
-@use '../helpers/mixins' as *;
-@use '../helpers/media' as *;
+@use '../helpers' as *;
 
 @layer components {
 	.header {
@@ -91,6 +89,12 @@
 		}
 
 		&__signup {
+			@include md {
+				font-size: 12px;
+			}
+			@include lg {
+				font-size: 17px;
+			}
 		}
 
 		&__close {

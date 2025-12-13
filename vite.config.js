@@ -71,4 +71,24 @@ export default defineConfig({
     // 	targets: ["defaults"],
     // }),
   ],
+  resolve: {
+    alias: [
+      {
+        find: "@b",
+        replacement: path.resolve(__dirname, "src/sass/blocks"),
+      },
+      {
+        find: "@h",
+        replacement: path.resolve(__dirname, "src/sass/helpers"),
+      },
+      {
+        find: "@m",
+        replacement: path.resolve(__dirname, "src/img"),
+      },
+      {
+        find: "@s",
+        replacement: path.resolve(__dirname, "src/sass"),
+      },
+    ],
+  },
 });

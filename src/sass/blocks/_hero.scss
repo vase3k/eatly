@@ -1,11 +1,8 @@
-@use '../helpers/variables' as *;
-@use '../helpers/mixins' as *;
-@use '../helpers/media' as *;
+@use '../helpers' as *;
 
 @layer components {
 	.hero {
-		margin-top: 50px;
-		margin-bottom: 50px;
+		padding-block: $section-padding-block;
 
 		&__container {
 			display: flex;
@@ -79,25 +76,6 @@
 			@include lg {
 				font-size: 15px;
 			}
-		}
-
-		&__subject {
-			font-size: 46px;
-			font-weight: 600;
-			line-height: 1.2;
-			flex-basis: 100%;
-			letter-spacing: -0.04em;
-			color: $dark-text;
-			@include md {
-				font-size: 54px;
-			}
-			@include lg {
-				font-size: 75px;
-			}
-		}
-
-		&__highlight {
-			color: $purple-bg;
 		}
 
 		&__text {

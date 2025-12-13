@@ -3,7 +3,11 @@
 <head>
 	<meta charset='UTF-8' />
 	<meta
-		content='width=device-width, initial-scale=1.0'
+		content='width=device-width,
+user-scalable=no,
+initial-scale=1,0,
+maximum-scale=1.0,
+minimum-scale=1.0'
 		name='viewport'
 	/>
 	<title>Eatly | Home</title>
@@ -85,8 +89,8 @@
 				<span class='hero__caption-divider divider'></span>
 				<span class='hero__caption-text'>OVER 1000 USERS</span>
 
-				<h1 class='hero__subject'>Enjoy Foods Over
-					<span class='hero__highlight'>
+				<h1 class='title text-4 md:text-[53px] lg:text-[75px]'>Enjoy Foods Over
+					<span class='title--highlight'>
 						World
 					</span>
 				</h1>
@@ -191,6 +195,48 @@
 			</p>
 		</div>
 
+	</section>
+	<section class='quality'>
+		<div class='quality__container container'>
+			<div class='quality__inner'>
+				<h2 class='title text-center px-8 md:px-0 md:text-left md:pr-45'>
+					Premium <span class='title--highlight'>Quality</span> For Your Health
+				</h2>
+				<ul class='quality__list'>
+					<li class='quality__item'>
+						Premium quality food is made with ingredients
+						that are packed with essential vitamins, minerals.
+					</li>
+					<li class='quality__item'>
+						These foods promote overall wellness by support healthy digestion and
+						boosting immunity
+					</li>
+				</ul>
+				<button
+					class='quality__button button'
+					type='button'
+				>
+					Download
+					<img
+						alt='button arrow'
+						height='12'
+						loading='lazy'
+						src='/src/img/quality/quality__button-arrow.svg'
+						width='12'
+					/>
+				</button>
+			</div>
+			<div class='quality__phone-wrap'>
+				<img
+					alt='picture of iPhone'
+					class='quality__phone-img'
+					height='342'
+					loading='lazy'
+					src='/src/img/quality/quality__phone.png'
+					width='170'
+				/>
+			</div>
+		</div>
 	</section>
 </main>
 <footer class='footer'></footer>

@@ -1,0 +1,125 @@
+@use '../helpers' as *;
+
+@layer components {
+	.quality {
+		@include section-padding-block;
+
+		&__container {
+			display: flex;
+			flex-wrap: wrap;
+			gap: 100px;
+			justify-content: center;
+			@include md {
+				gap: 200px;
+				flex-wrap: nowrap;
+			}
+			@include lg {
+				gap: 230px;
+			}
+		}
+
+		&__inner {
+			display: flex;
+			flex-wrap: wrap;
+			justify-content: center;
+			gap: 35px;
+			@include md {
+				flex-basis: 540px;
+				order: 1;
+				justify-content: start;
+				align-content: center;
+			}
+		}
+
+		&__list {
+			list-style: disc;
+			display: flex;
+			flex-wrap: wrap;
+			gap: 16px;
+			padding-left: 20px;
+		}
+
+		&__item {
+			font-family: $second-family;
+			font-size: 12px;
+			color: $dim-text;
+			@include md {
+				font-size: 14px;
+			}
+			@include lg {
+				font-size: 20px;
+			}
+		}
+
+		&__button {
+			display: flex;
+			align-items: center;
+			gap: 10px;
+			position: relative;
+			@include lg {
+				gap: 15px;
+			}
+
+			&::before {
+				content: url('/src/img/quality/quality__element-1.svg');
+				position: absolute;
+				width: 100px;
+				height: 56px;
+				top: 20px;
+				left: -73px;
+				@include md {
+					left: unset;
+					top: unset;
+					right: -3.9625rem;
+					bottom: -3rem;
+					rotate: 252deg;
+				}
+				@include lg {
+					right: -4.0625rem;
+					bottom: -3.2rem;
+				}
+			}
+		}
+
+		&__phone-wrap {
+			position: relative;
+
+			@include md {
+				flex-basis: 214px;
+				flex-shrink: 0;
+			}
+
+			&::after {
+				content: "";
+				position: absolute;
+				width: 1.775rem;
+				height: 23px;
+				top: -0.575rem;
+				right: -1.975rem;
+				background-image: url('/src/img/quality/quality__element-2.svg');
+				background-size: contain;
+				@include md {
+					width: 36px;
+					height: 29px;
+					top: -0.875rem;
+					right: -2.175rem;
+				}
+				@include lg {
+					width: 52px;
+					height: 42px;
+					top: -1.375rem;
+					right: -3.175rem;
+				}
+			}
+
+		}
+
+		&__phone-img {
+			@include md {
+				width: 100%;
+			}
+
+		}
+
+	}
+}

@@ -1,26 +1,28 @@
-@use '../helpers/variables' as *;
-@use '../helpers/mixins' as *;
-@use '../helpers/media' as *;
+@use "../helpers" as *;
 
 @layer components {
 	.button {
-		@include lg {
-			padding-block: 18px;
-			padding-inline: 27px;
-			border-radius: 18px;
-		}
-		border-radius: 13px;
+		border-radius: $bottom-radius;
 		padding-block: 12px;
 		padding-inline: 20px;
 		color: $white-bg;
 		background-color: $main;
+		font-weight: 500;
+		font-size: 13px;
+		text-transform: capitalize;
+
 		@include hover-opacity;
+		@include lg {
+			font-size: 16px;
+			padding-block: 18px;
+			padding-inline: 27px;
+			border-radius: 18px;
+		}
 
 		&--white {
 			background-color: $white-bg;
 			color: $main;
-			border: 1.20px solid $main;
+			border: $border-button;
 		}
 	}
 }
-

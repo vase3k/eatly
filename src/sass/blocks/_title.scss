@@ -1,0 +1,24 @@
+@use '../helpers' as *;
+
+@layer components {
+	.title {
+		font-size: 30px;
+		font-weight: 600;
+		line-height: 1.2;
+		flex-basis: 100%;
+		letter-spacing: -0.04em;
+		color: $dark-text;
+		@include md {
+			font-size: 36px;
+		}
+		@include lg {
+			font-size: 50px;
+		}
+
+		&--highlight {
+			color: $purple-bg;
+		}
+	}
+}
+
+
