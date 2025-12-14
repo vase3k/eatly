@@ -21,31 +21,5 @@
 				max-width: unset;
 			}
 		}
-
-		&__items {
-			display: flex;
-			flex-wrap: wrap;
-			gap: 40px;
-			@include md {
-				gap: 20px;
-				flex-wrap: nowrap;
-			}
-		}
-
-		&__item {
-			@include md {
-				flex: 1;
-			}
-		}
-
-		&__view-all {
-			display: flex;
-			align-items: center;
-			gap: 15px;
-			margin-left: auto;
-			font-weight: 500;
-			font-size: 20px;
-			color: $mist-text;
-		}
 	}
 }

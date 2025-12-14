@@ -1,0 +1,19 @@
+@use '../helpers' as *;
+
+@layer components {
+	.menu-list {
+		display: flex;
+		flex-wrap: wrap;
+		gap: 40px;
+		@include md {
+			gap: 20px;
+			flex-wrap: nowrap;
+		}
+	}
+
+	.menu-item {
+		@include md {
+			flex: 1;
+		}
+	}
+}

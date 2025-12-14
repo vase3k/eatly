@@ -1,0 +1,45 @@
+@use '../helpers' as *;
+
+@layer components {
+
+}
+
+.dishes {
+	@include section-padding-block;
+
+	&__container {
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 60px;
+		@include md {
+			flex-wrap: wrap;
+		}
+	}
+
+	&__title {
+		max-width: 250px;
+		text-align: center;
+		@include md {
+			max-width: unset;
+		}
+	}
+
+	&__items {
+		display: grid;
+		grid-template-columns: 1fr 1fr;
+		gap: 40px 20px;
+		@include md {
+			grid-template-columns: repeat(6, 1fr);
+		}
+		@include lg {
+			gap: 40px 30px;
+		}
+	}
+
+	&__item {
+		flex-basis: 146px;
+
+	}
+
+}

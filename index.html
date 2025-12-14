@@ -13,7 +13,7 @@ minimum-scale=1.0'
 	<title>Eatly | Home</title>
 </head>
 <body>
-<header class='header'>
+<header class='header '>
 	<div class='header__container container'>
 		<img
 			alt='company logo'
@@ -82,7 +82,7 @@ minimum-scale=1.0'
 	</div>
 </header>
 <main>
-	<section class='hero hidden'>
+	<section class='hero '>
 		<div class='hero__container container'>
 			<div class='hero__inner'>
 
@@ -169,7 +169,7 @@ minimum-scale=1.0'
 			</div>
 		</div>
 	</section>
-	<section class='features hidden'>
+	<section class='features '>
 		<div class='features__wrap'>
 			<h2 class='features__title'>10K+</h2>
 			<p class='features__text'>
@@ -197,7 +197,7 @@ minimum-scale=1.0'
 		</div>
 
 	</section>
-	<section class='quality hidden'>
+	<section class='quality '>
 		<div class='quality__container container'>
 			<div class='quality__inner'>
 				<h2 class='title text-center px-8 md:px-0 md:text-left md:pr-45'>
@@ -239,15 +239,16 @@ minimum-scale=1.0'
 			</div>
 		</div>
 	</section>
-	<section class='restaurants'>
+	<section class='restaurants '>
 		<div class='restaurants__container container'>
 			<h2 class='restaurants__title title'>Our Top
 				<span class='title--highlight'>Restaurants</span></h2>
-			<ul class='restaurants__items'>
-				<li class='restaurants__item'>
+			<ul class='restaurants__items menu-list'>
+				<li class='restaurants__item menu-item'>
 					<div
 						class='card'
 						data-item='1'
+						data-large
 					>
 						<span
 							class='card__highlight'
@@ -274,10 +275,11 @@ minimum-scale=1.0'
 						/>
 					</div>
 				</li>
-				<li class='restaurants__item'>
+				<li class='restaurants__item menu-item'>
 					<div
 						class='card'
 						data-item='2'
+						data-large
 					>
 						<span
 							class='card__highlight'
@@ -304,10 +306,11 @@ minimum-scale=1.0'
 						/>
 					</div>
 				</li>
-				<li class='restaurants__item'>
+				<li class='restaurants__item menu-item'>
 					<div
 						class='card'
 						data-item='1'
+						data-large
 					>
 						<span
 							class='card__highlight'
@@ -336,13 +339,283 @@ minimum-scale=1.0'
 				</li>
 			</ul>
 			<a
-				class='restaurants__view-all'
+				class='view-all'
 				href='/'
 			>
 				View All
 				<img
 					alt='arrow'
-					class='restaurants__arrow'
+					class='view-all__arrow'
+					height='15'
+					loading='lazy'
+					src='/src/img/restaurants/restaurants__arrow.svg'
+					width='15'
+				/>
+			</a>
+		</div>
+	</section>
+	<section class='dishes'>
+		<div class='dishes__container container'>
+			<h2 class='dishes__title title'>Our Top
+				<span class='title--highlight'>Dishes</span>
+			</h2>
+			<ul class='dishes__items menu-list'>
+				<li class='dishes__item menu-item'>
+					<div
+						class='card'
+						data-plate='1'
+						data-small
+					>
+						<span
+							class='card__highlight'
+							data-healhy
+						>Healthy</span>
+						<h3 class='card__subtitle'>Chicken Hell</h3>
+						<span class='card__time'>20min •</span>
+						<img
+							alt='star'
+							class='card__star'
+							height='16'
+							loading='lazy'
+							src='/src/img/restaurants/restaurant__star.svg'
+							width='16'
+						/>
+						<span class='card__rating'>3.8</span>
+						<span class='card__price'>$45
+							<span class='card__price-cent'>.99</span>
+						</span>
+						<img
+							alt='add to basket'
+							class='card__add'
+							height='25'
+							loading='lazy'
+							src='/src/img/dishes/dishes__icon-1.svg'
+							width='28'
+						/>
+						<img
+							alt='add to favorite'
+							class='card__favorite'
+							height='11'
+							loading='lazy'
+							src='/src/img/dishes/dishes__icon-2.svg'
+							width='14'
+						/>
+					</div>
+				</li>
+				<li class='dishes__item menu-item'>
+					<div
+						class='card'
+						data-plate='2'
+						data-small
+					>
+						<span
+							class='card__highlight'
+							data-trending
+						>Trending</span>
+						<h3 class='card__subtitle'>Swe Dish</h3>
+						<span class='card__time'>50min •</span>
+						<img
+							alt='star'
+							class='card__star'
+							height='16'
+							loading='lazy'
+							src='/src/img/restaurants/restaurant__star.svg'
+							width='16'
+						/>
+						<span class='card__rating'>4.8</span>
+						<span class='card__price'>$12<span class='card__price-cent'>.99</span>
+						</span>
+						<img
+							alt='add to basket'
+							class='card__add'
+							height='25'
+							loading='lazy'
+							src='/src/img/dishes/dishes__icon-1.svg'
+							width='28'
+						/>
+						<img
+							alt='add to favorite'
+							class='card__favorite'
+							height='11'
+							loading='lazy'
+							src='/src/img/dishes/dishes__icon-2.svg'
+							width='14'
+						/>
+					</div>
+				</li>
+				<li class='dishes__item menu-item'>
+					<div
+						class='card'
+						data-plate='3'
+						data-small
+					>
+						<span
+							class='card__highlight'
+							data-supreme
+						>Supreme</span>
+						<h3 class='card__subtitle'>Chicken BBQ</h3>
+						<span class='card__time'>56min •</span>
+						<img
+							alt='star'
+							class='card__star'
+							height='16'
+							loading='lazy'
+							src='/src/img/restaurants/restaurant__star.svg'
+							width='16'
+						/>
+						<span class='card__rating'>6.0</span>
+						<span class='card__price'>$56<span class='card__price-cent'>.99</span>
+						</span>
+						<img
+							alt='add to basket'
+							class='card__add'
+							height='25'
+							loading='lazy'
+							src='/src/img/dishes/dishes__icon-1.svg'
+							width='28'
+						/>
+						<img
+							alt='add to favorite'
+							class='card__favorite'
+							height='11'
+							loading='lazy'
+							src='/src/img/dishes/dishes__icon-2.svg'
+							width='14'
+						/>
+					</div>
+				</li>
+				<li class='dishes__item menu-item'>
+					<div
+						class='card'
+						data-plate='1'
+						data-small
+					>
+						<span
+							class='card__highlight'
+							data-healhy
+						>Healthy</span>
+						<h3 class='card__subtitle'>Chicken Hell</h3>
+						<span class='card__time'>22min •</span>
+						<img
+							alt='star'
+							class='card__star'
+							height='16'
+							loading='lazy'
+							src='/src/img/restaurants/restaurant__star.svg'
+							width='16'
+						/>
+						<span class='card__rating'>1.8</span>
+						<span class='card__price'>$6<span class='card__price-cent'>.99</span>
+						</span>
+						<img
+							alt='add to basket'
+							class='card__add'
+							height='25'
+							loading='lazy'
+							src='/src/img/dishes/dishes__icon-1.svg'
+							width='28'
+						/>
+						<img
+							alt='add to favorite'
+							class='card__favorite'
+							height='11'
+							loading='lazy'
+							src='/src/img/dishes/dishes__icon-2.svg'
+							width='14'
+						/>
+					</div>
+				</li>
+				<li class='dishes__item menu-item'>
+					<div
+						class='card'
+						data-plate='2'
+						data-small
+					>
+						<span
+							class='card__highlight'
+							data-healhy
+						>Healthy</span>
+						<h3 class='card__subtitle'>Beef Hell</h3>
+						<span class='card__time'>15min •</span>
+						<img
+							alt='star'
+							class='card__star'
+							height='16'
+							loading='lazy'
+							src='/src/img/restaurants/restaurant__star.svg'
+							width='16'
+						/>
+						<span class='card__rating'>4.8</span>
+						<span class='card__price'>$12<span class='card__price-cent'>.99</span>
+						</span>
+						<img
+							alt='add to basket'
+							class='card__add'
+							height='25'
+							loading='lazy'
+							src='/src/img/dishes/dishes__icon-1.svg'
+							width='28'
+						/>
+						<img
+							alt='add to favorite'
+							class='card__favorite'
+							height='11'
+							loading='lazy'
+							src='/src/img/dishes/dishes__icon-2.svg'
+							width='14'
+						/>
+					</div>
+				</li>
+				<li class='dishes__item menu-item'>
+					<div
+						class='card'
+						data-plate='3'
+						data-small
+					>
+						<span
+							class='card__highlight'
+							data-trending
+						>Trending</span>
+						<h3 class='card__subtitle'>Noodle Hell</h3>
+						<span class='card__time'>45min •</span>
+						<img
+							alt='star'
+							class='card__star'
+							height='16'
+							loading='lazy'
+							src='/src/img/restaurants/restaurant__star.svg'
+							width='16'
+						/>
+						<span class='card__rating'>3.8</span>
+						<span class='card__price'>$34<span class='card__price-cent'>.99</span>
+						</span>
+						<img
+							alt='add to basket'
+							class='card__add'
+							height='25'
+							loading='lazy'
+							src='/src/img/dishes/dishes__icon-1.svg'
+							width='28'
+						/>
+						<img
+							alt='add to favorite'
+							class='card__favorite'
+							height='11'
+							loading='lazy'
+							src='/src/img/dishes/dishes__icon-2.svg'
+							width='14'
+						/>
+					</div>
+				</li>
+			</ul>
+			<a
+				class='view-all'
+				href='/'
+			>
+				View All
+				<img
+					alt='arrow'
+					class='view-all__arrow'
 					height='15'
 					loading='lazy'
 					src='/src/img/restaurants/restaurants__arrow.svg'

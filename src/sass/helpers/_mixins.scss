@@ -87,6 +87,6 @@
 		padding-block: calc(var(--section-padding-block) * 2);
 	}
 	@include lg {
-		padding-block: calc(var(--section-padding-block) * 2 + 15);
+		padding-block: calc(var(--section-padding-block) * 2 + 15px);
 	}
 }

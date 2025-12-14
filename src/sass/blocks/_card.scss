@@ -5,9 +5,6 @@
 		display: flex;
 		flex-wrap: wrap;
 		align-items: center;
-		gap: 8px;
-		padding-block: 140px 14px;
-		padding-inline: 27px;
 		box-shadow: var(--box-shadow-card);
 		background-color: $white;
 		border: var(--border-card);
@@ -15,11 +12,35 @@
 		background-size: contain;
 		background-repeat: no-repeat;
 
-		@include md {
-			padding-block: 125px 14px;
+		&[data-large] {
+			gap: 8px;
+			padding-inline: 27px;
+			padding-block: 140px 14px;
+			@include md {
+				padding-block: 125px 14px;
+			}
+			@include lg {
+				padding-block: 180px 14px;
+			}
 		}
-		@include lg {
-			padding-block: 180px 14px;
+
+		&[data-small] {
+			background-size: 118px;
+			background-position: top 16px center;
+			gap: 4px;
+			padding-block: 132px 20px;
+			padding-inline: 15px;
+			position: relative;
+			@include md {
+				padding-block: 132px 20px;
+				padding-inline: 13px;
+			}
+			@include lg {
+				background-size: 155px;
+				padding-inline: 15px;
+				padding-block: 186px 20px;
+				background-position: top 25px center;
+			}
 		}
 
 		&[data-item="1"] {
@@ -28,6 +49,18 @@
 
 		&[data-item="2"] {
 			background-image: url('@m/restaurants/restaurant__img-2.png');
+		}
+
+		&[data-plate='1'] {
+			background-image: url('@m/dishes/dishes__img-4.png');
+		}
+
+		&[data-plate='2'] {
+			background-image: url('@m/dishes/dishes__img-2.png');
+		}
+
+		&[data-plate='3'] {
+			background-image: url('@m/dishes/dishes__img-3.png');
 		}
 
 
@@ -61,6 +94,14 @@
 			font-size: 20px;
 			color: $gunmetal-text;
 			flex-basis: 100%;
+
+			.card[data-small] & {
+				font-size: 15px;
+				@include lg {
+					font-size: 23px;
+				}
+			}
+
 			@include lg {
 				font-size: 25px;
 			}
@@ -77,18 +118,43 @@
 		}
 
 		&__star {
-
+			@include lg {
+				width: 24px;
+			}
 		}
 
 		&__rating {
+			font-family: $third-family;
+			color: $gray-text;
+			font-size: 15px;
 			@include lg {
 				font-size: 20px;
 			}
-
 		}
 
-		&__favorite {
+		&__price {
+			font-family: $third-family;
+			font-weight: 700;
+			color: $gunmetal-text;
 
+			&-cent {
+				font-size: 12px;
+				color: $gray-text;
+				@include lg {
+					font-size: 18px;
+				}
+			}
+
+			@include lg {
+				font-size: 25px;
+			}
+		}
+
+		&__add {
+			margin-left: auto;
+			@include lg {
+				width: 35px;
+			}
 		}
 
 		&__bookmark {
@@ -97,6 +163,21 @@
 
 			@include lg {
 				width: 40px;
+			}
+		}
+
+		&__favorite {
+			position: absolute;
+			top: 16px;
+			right: 10px;
+			@include md {
+				top: 17px;
+				right: 15px;
+			}
+			@include lg {
+				width: 21px;
+				top: 21px;
+				right: 24px;
 			}
 		}
 	}
