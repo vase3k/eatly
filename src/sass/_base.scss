@@ -18,7 +18,7 @@
 
 	.container {
 		width: 100%;
-		max-width: calc(314px + $paddingWidth);
+		max-width: calc(314px + $paddingWidth * 2);
 		margin: 0 auto;
 		padding: 0 $paddingWidth;
 		@include md {

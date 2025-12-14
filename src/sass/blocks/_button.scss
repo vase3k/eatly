@@ -22,7 +22,7 @@
 		&--white {
 			background-color: $white-bg;
 			color: $main;
-			border: $border-button;
+			border: var(--border-button);
 		}
 	}
 }

@@ -139,3 +139,12 @@ $color-z44by: #201f1f33;
 $section-padding-block: 25px;
 $border-button: 1px solid $main;
 $bottom-radius: 13px;
+
+:root {
+	--section-padding-block: #{$section-padding-block};
+	--border-button: #{1px solid $main};
+	--bottom-radius: #{$bottom-radius};
+	--box-shadow-card: 5px 57px 28px 0 rgba(229, 229, 229, 0.7);
+	--border-card: 1.00px solid $white-bg-card;
+	--radius-card: 24px;
+}

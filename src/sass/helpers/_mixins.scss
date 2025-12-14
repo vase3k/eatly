@@ -82,11 +82,11 @@
 }
 
 @mixin section-padding-block {
-	padding-block: $section-padding-block;
+	padding-block: var(--section-padding-block);
 	@include md {
-		padding-block: #{$section-padding-block * 2}
+		padding-block: calc(var(--section-padding-block) * 2);
 	}
 	@include lg {
-		padding-block: #{$section-padding-block * 2 + 15}
+		padding-block: calc(var(--section-padding-block) * 2 + 15);
 	}
 }

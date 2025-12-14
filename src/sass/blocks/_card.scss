@@ -1,0 +1,103 @@
+@use '../helpers' as *;
+
+@layer components {
+	.card {
+		display: flex;
+		flex-wrap: wrap;
+		align-items: center;
+		gap: 8px;
+		padding-block: 140px 14px;
+		padding-inline: 27px;
+		box-shadow: var(--box-shadow-card);
+		background-color: $white;
+		border: var(--border-card);
+		border-radius: var(--radius-card);
+		background-size: contain;
+		background-repeat: no-repeat;
+
+		@include md {
+			padding-block: 125px 14px;
+		}
+		@include lg {
+			padding-block: 180px 14px;
+		}
+
+		&[data-item="1"] {
+			background-image: url('@m/restaurants/restaurant__img-1.png');
+		}
+
+		&[data-item="2"] {
+			background-image: url('@m/restaurants/restaurant__img-2.png');
+		}
+
+
+		&__highlight {
+			margin-top: 8px;
+			font-weight: 400;
+			font-size: 12px;
+			color: $golden-text;
+			padding: 1px 7px 1px 7px;
+			border-radius: 4px;
+			background-color: $golden-accent;
+
+			&[data-trending] {
+				color: $red-accent;
+				background-color: $blush-accent;
+			}
+
+			&[data-healhy] {
+				color: $golden-text;
+				background-color: $golden-accent;
+			}
+
+			&[data-supreme] {
+				color: $green-accent;
+				background-color: rgba($jade-text, 0.2);
+			}
+		}
+
+		&__subtitle {
+			font-weight: 600;
+			font-size: 20px;
+			color: $gunmetal-text;
+			flex-basis: 100%;
+			@include lg {
+				font-size: 25px;
+			}
+		}
+
+		&__time {
+			font-family: $third-family;
+			font-weight: 400;
+			font-size: 15px;
+			color: $gray-text;
+			@include lg {
+				font-size: 20px;
+			}
+		}
+
+		&__star {
+
+		}
+
+		&__rating {
+			@include lg {
+				font-size: 20px;
+			}
+
+		}
+
+		&__favorite {
+
+		}
+
+		&__bookmark {
+			margin-left: auto;
+			margin-top: -18px;
+
+			@include lg {
+				width: 40px;
+			}
+		}
+	}
+}
