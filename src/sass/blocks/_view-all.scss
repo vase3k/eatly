@@ -2,12 +2,13 @@
 
 @layer components {
 	.view-all {
+		font-size: 20px;
+		font-weight: 500;
 		display: flex;
 		align-items: center;
-		gap: 15px;
 		margin-left: auto;
-		font-weight: 500;
-		font-size: 20px;
 		color: $mist-text;
+		gap: 15px;
 	}
 }
+

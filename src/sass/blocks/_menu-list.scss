@@ -6,14 +6,17 @@
 		flex-wrap: wrap;
 		gap: 40px;
 		@include md {
-			gap: 20px;
 			flex-wrap: nowrap;
+			gap: 20px;
+		}
+
+		&__item {
+			@include md {
+				flex: 1;
+			}
 		}
 	}
 
-	.menu-item {
-		@include md {
-			flex: 1;
-		}
-	}
 }
+
+

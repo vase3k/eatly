@@ -6,8 +6,8 @@
 
 		&__container {
 			display: flex;
-			gap: 50px;
 			flex-direction: column;
+			gap: 50px;
 			@include md {
 				flex-direction: row;
 				justify-content: space-between;
@@ -22,10 +22,10 @@
 			text-align: center;
 			gap: 20px 10px;
 			@include md {
-				gap: 20px 15px;
-				text-align: left;
 				align-content: center;
 				justify-content: start;
+				text-align: left;
+				gap: 20px 15px;
 			}
 			@include lg {
 				gap: 25px 20px;
@@ -93,8 +93,8 @@
 
 		&__annotation {
 			font-family: $font6;
-			font-weight: 500;
 			font-size: 12px;
+			font-weight: 500;
 			color: rgba($outer-text, 0.7);
 		}
 
@@ -104,31 +104,31 @@
 				top: 15px;
 				right: 20px;
 				display: grid;
+				border-radius: 8px;
+				background-color: $white;
+				box-shadow: -5px 6px 10px 0 rgba(0, 0, 0, 0.15);
 				row-gap: 5px;
 				grid-template-areas:
 				"icon title ."
 				"icon subtitle time";
-				box-shadow: -5px 6px 10px 0 rgba(0, 0, 0, 0.15);
 				padding-block: 2px;
 				padding-inline: 8px;
-				border-radius: 8px;
-				background-color: $white;
 				@include md {
-					padding-inline: 12px;
-					padding-block: 4px;
 					top: 22px;
 					right: 28px;
+					padding-inline: 12px;
+					padding-block: 4px;
 				}
 				@include lg {
-					padding-block: 8px;
 					top: 31px;
 					right: 41px;
+					padding-block: 8px;
 				}
 			}
 
 			&-thumb {
-				grid-area: icon;
 				margin-right: 8px;
+				grid-area: icon;
 				@include md {
 					width: 56px;
 					margin-right: 13px;
@@ -140,27 +140,27 @@
 			}
 
 			&-title {
-				grid-area: title;
-				font-weight: 600;
 				font-size: 7px;
-				color: $gunmetal-text;
+				font-weight: 600;
 				align-self: end;
 				margin-right: 25px;
+				color: $gunmetal-text;
+				grid-area: title;
 				@include md {
-					margin-right: 30px;
 					font-size: 11px;
+					margin-right: 30px;
 				}
 				@include lg {
-					margin-right: 50px;
 					font-size: 15px;
+					margin-right: 50px;
 				}
 			}
 
 			&-subtitle {
-				grid-area: subtitle;
-				font-weight: 500;
 				font-size: 4px;
+				font-weight: 500;
 				color: $gunmetal-text;
+				grid-area: subtitle;
 				@include md {
 					font-size: 7px;
 				}
@@ -170,11 +170,11 @@
 			}
 
 			&-time {
-				grid-area: time;
-				font-weight: 500;
 				font-size: 5px;
-				color: $mist-text;
+				font-weight: 500;
 				align-self: end;
+				color: $mist-text;
+				grid-area: time;
 				@include md {
 					font-size: 7px;
 				}
@@ -186,21 +186,21 @@
 
 			&-left {
 				position: absolute;
-				box-shadow: 7px 9px 18px 0 rgba(26, 32, 44, 0.15);
-				background: $white;
-				border-radius: 8px;
-				width: 98px;
-				padding-block: 6px;
-				left: 17px;
 				bottom: 16px;
+				left: 17px;
+				width: 98px;
+				border-radius: 8px;
+				background: $white;
+				box-shadow: 7px 9px 18px 0 rgba(26, 32, 44, 0.15);
+				padding-block: 6px;
 				@include md {
-					left: 25px;
 					bottom: 25px;
+					left: 25px;
 					width: 148px;
 				}
 				@include lg {
-					left: 36px;
 					bottom: 36px;
+					left: 36px;
 					width: 206px;
 				}
 			}
@@ -211,3 +211,4 @@
 		}
 	}
 }
+

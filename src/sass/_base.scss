@@ -11,6 +11,7 @@
 		background-color: $white-bg;
 		scrollbar-gutter: stable;
 	}
+
 }
 
 @layer override {
@@ -28,6 +29,7 @@
 			max-width: calc(1248px + $paddingWidth * 2);
 		}
 	}
+
 }
 
 // lg 1440px 1246px

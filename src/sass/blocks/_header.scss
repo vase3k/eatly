@@ -2,6 +2,11 @@
 
 @layer components {
 	.header {
+		font-family: $second-family;
+		font-weight: 500;
+		margin-top: 20px;
+		text-transform: capitalize;
+		color: $gray-nav;
 		@include md {
 			font-size: 12px;
 		}
@@ -9,21 +14,16 @@
 			font-size: 17px;
 			margin-top: 48px;
 		}
-		margin-top: 20px;
-		font-family: $second-family;
-		font-weight: 500;
-		text-transform: capitalize;
-		color: $gray-nav;
 
 		&__container {
+			display: flex;
+			align-items: center;
+			flex-wrap: wrap;
+			justify-content: space-between;
+			margin-top: 35px;
 			@include lg {
 				gap: 25px 100px;
 			}
-			display: flex;
-			flex-wrap: wrap;
-			justify-content: space-between;
-			align-items: center;
-			margin-top: 35px;
 			gap: 20px 70px;
 		}
 
@@ -45,18 +45,18 @@
 		&__nav {
 
 			@include mobile-only {
+				font-size: 24px;
 				position: fixed;
+				top: 0;
+				right: 0;
 				display: grid;
 				width: 60vw;
-				right: 0;
-				top: 0;
 				padding: 120px;
-				font-size: 24px;
-				gap: 30px;
-				background-color: $white-bg;
-				translate: 100%;
-				transition-property: translate;
 				transition-duration: 0.4s;
+				transition-property: translate;
+				background-color: $white-bg;
+				gap: 30px;
+				translate: 100%;
 				&[data-active] {
 					translate: 0;
 				}
@@ -64,9 +64,9 @@
 			@include md {
 				display: flex;
 				align-items: center;
+				flex-grow: 1;
 				justify-content: start;
 				gap: 50px;
-				flex-grow: 1;
 			}
 		}
 
@@ -75,12 +75,12 @@
 		}
 
 		&__buttons-group {
-			@include mobile-only {
-				@include visually-hidden;
-			}
 			display: inline-flex;
 			align-items: center;
 			justify-content: space-between;
+			@include mobile-only {
+				@include visually-hidden;
+			}
 			gap: 20px;
 		}
 
@@ -107,11 +107,11 @@
 
 		// .header__close-bar
 		&__close-bar {
-			height: 2px;
 			width: 100%;
-			background-color: $color-pppyi;
-			border-radius: 2px;
+			height: 2px;
 			transition: all 1s ease;
+			border-radius: 2px;
+			background-color: $color-pppyi;
 
 			&:nth-child(1) {
 				position: absolute;
@@ -149,3 +149,4 @@
 		}
 	}
 }
+

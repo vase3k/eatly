@@ -1,0 +1,68 @@
+@use '../helpers' as *;
+
+@layer components {
+	.control {
+		@include section-padding-block;
+
+		&__container {
+			display: grid;
+			gap: 100px;
+			@include md {
+				justify-content: space-between;
+				gap: 40px;
+				grid-template-columns: 1fr 380px;
+				grid-template-areas:
+			"title dashboard"
+			"items dashboard";
+			}
+			@include lg {
+				grid-template-columns: 1fr 530px;
+				gap: 50px;
+			}
+		}
+
+		&__title {
+			max-width: 260px;
+			@include md {
+				max-width: 280px;
+			}
+			@include lg {
+				max-width: 400px;
+			}
+		}
+
+		&__items {
+			position: relative;
+			display: grid;
+			max-width: 230px;
+			margin-top: -70px;
+			gap: 10px;
+
+			@include md {
+				margin-top: unset;
+			}
+			@include lg {
+				max-width: 345px;
+			}
+
+			&::after {
+				position: absolute;
+				right: -64px;
+				bottom: -73px;
+				width: 57px;
+				height: 101px;
+				content: '';
+				background-image: url('@m/control/control__arrow.svg');
+				background-repeat: no-repeat;
+				background-position: center top;
+				background-size: cover;
+				@include md {
+					@include visually-hidden;
+				}
+			}
+		}
+
+
+	}
+}
+

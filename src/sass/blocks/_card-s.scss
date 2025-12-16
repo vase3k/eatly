@@ -1,0 +1,86 @@
+@use '../helpers' as *;
+
+@layer components {
+	.card-s {
+		display: grid;
+		border-radius: 8px;
+		background-color: $white;
+		box-shadow: 0 13px 20px 0 rgba(70, 70, 70, 0.1);
+		grid-template-columns: auto 1fr auto;
+		grid-template-areas:
+		"icon title ."
+		"icon subtitle time";
+		gap: 0 12px;
+		padding-inline: 12px;
+		padding-block: 4px;
+
+		@include lg {
+			padding-inline: 17px;
+			padding-block: 10px;
+			gap: 2px 12px;
+		}
+
+		&__thumb {
+			width: 48px;
+			height: 48px;
+			background-repeat: no-repeat;
+			background-position: center;
+			background-size: contain;
+			grid-area: icon;
+			@include lg {
+				width: 68px;
+				height: 68px;
+			}
+
+			.card-s[data-item="1"] & {
+				background-image: url('@m/dishes/dishes__img-2.png');
+			}
+
+			.card-s[data-item="2"] & {
+				background-image: url('@m/dishes/dishes__img-4.png');
+			}
+
+			.card-s[data-item="3"] & {
+				background-image: url('@m/dishes/dishes__img-3.png');
+			}
+		}
+
+		&__title {
+			font-size: 12px;
+			font-weight: 600;
+			align-self: end;
+			color: $gunmetal-text;
+			@include lg {
+				font-size: 19px;
+			}
+		}
+
+		&__status {
+			font-size: 8px;
+			font-weight: 500;
+			color: $gunmetal-text;
+			grid-area: subtitle;
+
+			.card-s[data-status='red'] & {
+				color: $color-obmo7;
+			}
+
+			@include lg {
+				font-size: 12px;
+			}
+		}
+
+		&__time {
+			font-size: 9px;
+			font-weight: 500;
+			align-self: end;
+			color: $mist-text;
+			justify-self: right;
+			grid-area: time;
+			@include lg {
+				font-size: 13px;
+			}
+		}
+	}
+}
+

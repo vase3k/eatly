@@ -2,27 +2,28 @@
 
 @layer components {
 	.button {
+		font-size: 13px;
+		font-weight: 500;
+		text-transform: capitalize;
+		color: $white-bg;
 		border-radius: $bottom-radius;
+		background-color: $main;
 		padding-block: 12px;
 		padding-inline: 20px;
-		color: $white-bg;
-		background-color: $main;
-		font-weight: 500;
-		font-size: 13px;
-		text-transform: capitalize;
 
 		@include hover-opacity;
 		@include lg {
 			font-size: 16px;
+			border-radius: 18px;
 			padding-block: 18px;
 			padding-inline: 27px;
-			border-radius: 18px;
 		}
 
 		&--white {
-			background-color: $white-bg;
 			color: $main;
 			border: var(--border-button);
+			background-color: $white-bg;
 		}
 	}
+
 }

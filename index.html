@@ -13,7 +13,7 @@ minimum-scale=1.0'
 	<title>Eatly | Home</title>
 </head>
 <body>
-<header class='header '>
+<header class='header hidden'>
 	<div class='header__container container'>
 		<img
 			alt='company logo'
@@ -82,7 +82,7 @@ minimum-scale=1.0'
 	</div>
 </header>
 <main>
-	<section class='hero '>
+	<section class='hero hidden'>
 		<div class='hero__container container'>
 			<div class='hero__inner'>
 
@@ -169,7 +169,7 @@ minimum-scale=1.0'
 			</div>
 		</div>
 	</section>
-	<section class='features '>
+	<section class='features hidden'>
 		<div class='features__wrap'>
 			<h2 class='features__title'>10K+</h2>
 			<p class='features__text'>
@@ -197,7 +197,7 @@ minimum-scale=1.0'
 		</div>
 
 	</section>
-	<section class='quality '>
+	<section class='quality hidden'>
 		<div class='quality__container container'>
 			<div class='quality__inner'>
 				<h2 class='title text-center px-8 md:px-0 md:text-left md:pr-45'>
@@ -239,12 +239,12 @@ minimum-scale=1.0'
 			</div>
 		</div>
 	</section>
-	<section class='restaurants '>
+	<section class='restaurants hidden'>
 		<div class='restaurants__container container'>
 			<h2 class='restaurants__title title'>Our Top
 				<span class='title--highlight'>Restaurants</span></h2>
 			<ul class='restaurants__items menu-list'>
-				<li class='restaurants__item menu-item'>
+				<li class='restaurants__item menu-list__item'>
 					<div
 						class='card'
 						data-item='1'
@@ -275,7 +275,7 @@ minimum-scale=1.0'
 						/>
 					</div>
 				</li>
-				<li class='restaurants__item menu-item'>
+				<li class='restaurants__item menu-list__item'>
 					<div
 						class='card'
 						data-item='2'
@@ -306,7 +306,7 @@ minimum-scale=1.0'
 						/>
 					</div>
 				</li>
-				<li class='restaurants__item menu-item'>
+				<li class='restaurants__item menu-list__item'>
 					<div
 						class='card'
 						data-item='1'
@@ -354,13 +354,13 @@ minimum-scale=1.0'
 			</a>
 		</div>
 	</section>
-	<section class='dishes'>
+	<section class='dishes hidden'>
 		<div class='dishes__container container'>
 			<h2 class='dishes__title title'>Our Top
 				<span class='title--highlight'>Dishes</span>
 			</h2>
 			<ul class='dishes__items menu-list'>
-				<li class='dishes__item menu-item'>
+				<li class='dishes__item menu-list__item'>
 					<div
 						class='card'
 						data-plate='1'
@@ -402,7 +402,7 @@ minimum-scale=1.0'
 						/>
 					</div>
 				</li>
-				<li class='dishes__item menu-item'>
+				<li class='dishes__item menu-list__item'>
 					<div
 						class='card'
 						data-plate='2'
@@ -443,7 +443,7 @@ minimum-scale=1.0'
 						/>
 					</div>
 				</li>
-				<li class='dishes__item menu-item'>
+				<li class='dishes__item menu-list__item'>
 					<div
 						class='card'
 						data-plate='3'
@@ -484,7 +484,7 @@ minimum-scale=1.0'
 						/>
 					</div>
 				</li>
-				<li class='dishes__item menu-item'>
+				<li class='dishes__item menu-list__item'>
 					<div
 						class='card'
 						data-plate='1'
@@ -525,7 +525,7 @@ minimum-scale=1.0'
 						/>
 					</div>
 				</li>
-				<li class='dishes__item menu-item'>
+				<li class='dishes__item menu-list__item'>
 					<div
 						class='card'
 						data-plate='2'
@@ -566,7 +566,7 @@ minimum-scale=1.0'
 						/>
 					</div>
 				</li>
-				<li class='dishes__item menu-item'>
+				<li class='dishes__item menu-list__item'>
 					<div
 						class='card'
 						data-plate='3'
@@ -622,6 +622,167 @@ minimum-scale=1.0'
 					width='15'
 				/>
 			</a>
+		</div>
+	</section>
+	<section class='control'>
+		<div class='control__container container'>
+			<h2 class='control__title title'>Control
+				<span class='title--highlight'>Purchases</span> Via
+				Dashboard
+			</h2>
+			<ul class='control__items'>
+				<li
+					class='card-s'
+					data-item='1'
+					data-status='red'
+				>
+					<span class='card-s__thumb inline-block'></span>
+					<h3 class='card-s__title'>Chicken Hell</h3>
+					<span class='card-s__status'>On The Way</span>
+					<span class='card-s__time'>3:09 PM</span>
+				</li>
+				<li
+					class='card-s'
+					data-item='2'
+					data-status=''
+				>
+					<span class='card-s__thumb inline-block'></span>
+					<h3 class='card-s__title'>Swe Dish</h3>
+					<span class='card-s__status'>Delivered</span>
+					<span class='card-s__time'>Yesterday</span>
+				</li>
+				<li
+					class='card-s'
+					data-item='3'
+					data-status=''
+				>
+					<span class='card-s__thumb inline-block'></span>
+					<h3 class='card-s__title'>Fish Hell Veg</h3>
+					<span class='card-s__status'>Cancelled</span>
+					<span class='card-s__time'>Yesterday</span>
+				</li>
+			</ul>
+			<div class='dashboard'>
+				<h3 class='dashboard__title'>Purchases</h3>
+				<label
+					class='dashboard__label'
+					for='arrow-selector'
+				>
+					<select
+						class='dashboard__dropdown'
+						id='arrow-selector'
+						name='month'
+					>
+						<option value='week'>This week</option>
+						<option value='month'>This month</option>
+						<option value='year'>This year</option>
+					</select>
+					<img
+						alt='down arrow selector'
+						class='dashboard__arrow'
+						height='18'
+						loading='lazy'
+						src='/src/img/control/chevron-down.svg'
+						width='18'
+					/>
+				</label>
+				<div class='dashboard__card mt-2'>
+					<img
+						alt='expense icon'
+						class='dashboard__card-thumb'
+						height='36'
+						loading='lazy'
+						src='/src/img/control/control__expense.webp'
+						width='36'
+					/>
+					<h4 class='dashboard__card-subtitle'>Expense</h4>
+					<span class='dashboard__card-anotation'>Increased By 10%</span>
+					<label class='dashboard__card-price'>
+						<input
+							class='w-full text-right'
+							type='text'
+							value='409$'
+						>
+					</label>
+					<svg
+						fill='none'
+						height='7'
+						viewBox='0 0 100% 7'
+						width='100%'
+						xmlns='http://www.w3.org/2000/svg'
+					>
+						<g id='divider'>
+							<rect
+								fill='rgb(108,95,188)'
+								height='7'
+								id='Rectangle 13'
+								opacity='0.200000003'
+								rx='3.350588'
+								width='100%'
+								x='0.000000'
+								y='0.000000'
+							/>
+							<rect
+								fill='rgb(108,95,188)'
+								height='7'
+								id='Rectangle 14'
+								rx='3.350588'
+								width='70%'
+								x='0.000000'
+								y='0.000000'
+							/>
+						</g>
+					</svg>
+				</div>
+				<div class='dashboard__card'>
+					<img
+						alt='expense icon'
+						class='dashboard__card-thumb'
+						height='36'
+						loading='lazy'
+						src='/src/img/control/control__voucher.webp'
+						width='36'
+					/>
+					<h4 class='dashboard__card-subtitle'>Voucher Usage</h4>
+					<span class='dashboard__card-anotation'>Increased By 5%</span>
+					<label class='dashboard__card-price'>
+						<input
+							class='w-full text-right'
+							type='text'
+							value='45$'
+						>
+					</label>
+					<svg
+						fill='none'
+						height='7'
+						viewBox='0 0 100% 7'
+						width='100%'
+						xmlns='http://www.w3.org/2000/svg'
+					>
+						<g id='divider'>
+							<rect
+								fill='rgb(251,173,24)'
+								height='7'
+								id='Rectangle 13'
+								opacity='0.200000003'
+								rx='3.350588'
+								width='100%'
+								x='0.000000'
+								y='0.000488'
+							/>
+							<rect
+								fill='rgb(251,173,24)'
+								height='7'
+								id='Rectangle 14'
+								rx='3.350588'
+								width='40%'
+								x='0.000000'
+								y='0.000488'
+							/>
+						</g>
+					</svg>
+				</div>
+			</div>
 		</div>
 	</section>
 </main>

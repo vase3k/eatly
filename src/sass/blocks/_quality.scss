@@ -7,11 +7,11 @@
 		&__container {
 			display: flex;
 			flex-wrap: wrap;
-			gap: 100px;
 			justify-content: center;
+			gap: 100px;
 			@include md {
-				gap: 200px;
 				flex-wrap: nowrap;
+				gap: 200px;
 			}
 			@include lg {
 				gap: 230px;
@@ -24,19 +24,19 @@
 			justify-content: center;
 			gap: 35px;
 			@include md {
-				flex-basis: 540px;
-				order: 1;
-				justify-content: start;
 				align-content: center;
+				flex-basis: 540px;
+				justify-content: start;
+				order: 1;
 			}
 		}
 
 		&__list {
 			display: flex;
-			list-style: disc;
 			flex-wrap: wrap;
-			gap: 16px;
 			padding-left: 20px;
+			list-style: disc;
+			gap: 16px;
 		}
 
 		&__item {
@@ -52,26 +52,26 @@
 		}
 
 		&__button {
+			position: relative;
 			display: flex;
 			align-items: center;
 			gap: 10px;
-			position: relative;
 			@include lg {
 				gap: 15px;
 			}
 
 			&::before {
-				content: url('/src/img/quality/quality__element-1.svg');
 				position: absolute;
-				width: 100px;
-				height: 56px;
 				top: 20px;
 				left: -73px;
+				width: 100px;
+				height: 56px;
+				content: url('/src/img/quality/quality__element-1.svg');
 				@include md {
-					left: unset;
 					top: unset;
 					right: -3.9625rem;
 					bottom: -3rem;
+					left: unset;
 					rotate: 252deg;
 				}
 				@include lg {
@@ -85,13 +85,13 @@
 			position: relative;
 
 			&::before {
+				position: absolute;
+				display: block;
+				width: 100%;
+				height: 100%;
 				content: "";
 				border-radius: 30px;
 				box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.8);
-				width: 100%;
-				height: 100%;
-				display: block;
-				position: absolute;
 			}
 
 
@@ -101,25 +101,25 @@
 			}
 
 			&::after {
-				content: "";
 				position: absolute;
-				width: 1.775rem;
-				height: 23px;
 				top: -0.575rem;
 				right: -1.975rem;
+				width: 1.775rem;
+				height: 23px;
+				content: "";
 				background-image: url('/src/img/quality/quality__element-2.svg');
 				background-size: contain;
 				@include md {
-					width: 36px;
-					height: 29px;
 					top: -0.875rem;
 					right: -2.175rem;
+					width: 36px;
+					height: 29px;
 				}
 				@include lg {
-					width: 52px;
-					height: 42px;
 					top: -1.375rem;
 					right: -3.175rem;
+					width: 52px;
+					height: 42px;
 				}
 			}
 
@@ -132,3 +132,4 @@
 		}
 	}
 }
+

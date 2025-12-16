@@ -1,0 +1,144 @@
+@use '../helpers' as *;
+
+@layer components {
+	.dashboard {
+		font-family: $third-family;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		border: 1px solid $color-ibfjl;
+		border-radius: 15px;
+		background-color: $white;
+		box-shadow: var(--box-shadow-card);
+		padding-inline: 22px;
+		padding-block: 26px;
+		gap: 15px;
+		@include md {
+			grid-area: dashboard;
+		}
+		@include lg {
+			place-content: space-between;
+			padding-inline: 37px;
+			padding-block: 45px;
+		}
+
+		&__title {
+			font-size: 16px;
+			font-weight: 800;
+			color: $slate-text;
+			@include md {
+				font-size: 20px;
+			}
+			@include lg {
+				font-size: 28px;
+			}
+		}
+
+		&__label {
+			font-size: 11px;
+			font-weight: 600;
+			position: relative;
+			letter-spacing: 0.03em;
+			color: $slate-text;
+			border-radius: 7px;
+			background-color: $color-5fjgw;
+			@include md {
+				font-size: 15px;
+			}
+			@include lg {
+				font-size: 18px;
+			}
+
+		}
+
+		&__dropdown {
+			padding-right: 20px;
+			cursor: pointer;
+			padding-block: 7px;
+			padding-inline: 11px 27px;
+			appearance: none;
+		}
+
+		&__arrow {
+			@include abs-y;
+			right: 11px;
+			display: inline-block;
+			pointer-events: none;
+		}
+
+		&__card {
+			display: grid;
+			width: 100%;
+			padding: 14px;
+			border: 1px solid $color-ibfjl;
+			border-radius: 11px;
+			grid-template-columns: auto 1fr auto;
+			gap: 12px;
+			grid-template-areas:
+			"thumb 	title 			price"
+			"thumb 	annotation 	price"
+			"fill 	fill 				fill";
+
+			@include lg {
+				padding: 25px;
+			}
+
+			&-thumb {
+				grid-area: thumb;
+				@include md {
+					width: 48px;
+					height: 48px;
+				}
+			}
+
+			&-subtitle {
+				font-size: 11px;
+				font-weight: 800;
+				align-self: end;
+				color: $slate-text;
+				grid-area: title;
+				@include md {
+					font-size: 15px;
+				}
+				@include lg {
+					font-size: 18px
+				}
+
+			}
+
+			&-anotation {
+				font-size: 9px;
+				font-weight: 500;
+				margin-top: -10px;
+				color: $steel-text;
+				grid-area: annotation;
+				@include md {
+					font-size: 14px;
+				}
+			}
+
+			&-price {
+				font-weight: 800;
+				align-self: center;
+				width: 60px;
+				text-align: right;
+				color: $slate-text;
+				grid-area: price;
+				@include lg {
+					font-size: 21px;
+					width: 100px;
+				}
+			}
+
+			&-fill {
+				grid-area: fill;
+			}
+
+			svg {
+				grid-area: fill;
+			}
+		}
+	}
+}
+
+
