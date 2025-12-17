@@ -90,3 +90,7 @@
 		padding-block: calc(var(--section-padding-block) * 2 + 15px);
 	}
 }
+
+@mixin em-font {
+	font-size: var(--em-font-size)
+}

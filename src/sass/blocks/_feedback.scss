@@ -1,0 +1,14 @@
+@use '../helpers' as *;
+
+@layer components {
+
+}
+
+.feedback {
+	@include section-padding-block;
+
+	&__container {
+
+	}
+
+}

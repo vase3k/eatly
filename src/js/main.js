@@ -1,8 +1,10 @@
 "use strict";
 
-import Header from "./modules/header.js";
 import '/src/js/modules/dashboardMeter.js';
+import swiperFeedback from "./modules/swiper.js";
+
 
 window.addEventListener("DOMContentLoaded", async () => {
-	new Header();
+	//new Header();
+	swiperFeedback.init()
 });
