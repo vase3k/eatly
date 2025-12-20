@@ -13,7 +13,7 @@ minimum-scale=1.0'
 	<title>Eatly | Home</title>
 </head>
 <body>
-<header class='header hidden'>
+<header class='header'>
 	<div class='header__container container'>
 		<img
 			alt='company logo'
@@ -82,7 +82,7 @@ minimum-scale=1.0'
 	</div>
 </header>
 <main>
-	<section class='hero hidden'>
+	<section class='hero'>
 		<div class='hero__container container'>
 			<div class='hero__inner'>
 				<span class='hero__caption-divider divider'></span>
@@ -164,7 +164,7 @@ minimum-scale=1.0'
 			</div>
 		</div>
 	</section>
-	<section class='features hidden'>
+	<section class='features'>
 		<div class='features__wrap'>
 			<h2 class='features__title'>10K+</h2>
 			<p class='features__text'>
@@ -188,7 +188,7 @@ minimum-scale=1.0'
 			</p>
 		</div>
 	</section>
-	<section class='quality hidden'>
+	<section class='quality'>
 		<div class='quality__container container'>
 			<div class='quality__inner'>
 				<h2 class='title px-8 text-center md:px-0 md:pr-45 md:text-left'>
@@ -231,7 +231,7 @@ minimum-scale=1.0'
 			</div>
 		</div>
 	</section>
-	<section class='restaurants hidden'>
+	<section class='restaurants'>
 		<div class='restaurants__container container'>
 			<h2 class='restaurants__title title'>
 				Our Top <span class='title--highlight'>Restaurants</span>
@@ -347,7 +347,7 @@ minimum-scale=1.0'
 			</a>
 		</div>
 	</section>
-	<section class='dishes hidden'>
+	<section class='dishes'>
 		<div class='dishes__container container'>
 			<h2 class='dishes__title title'>
 				Our Top
@@ -791,7 +791,7 @@ minimum-scale=1.0'
 			</div>
 		</div>
 	</section>
-	<section class='feedback overflow-hidden'>
+	<section class='feedback  overflow-hidden'>
 		<div class='feedback__container relative container'>
 			<h2 class='feedback__title title text-center'>
 				Customer
@@ -923,11 +923,104 @@ minimum-scale=1.0'
 			<div class='md:ml-[400px] md:w-[400px] lg:ml-[570px] lg:w-[500px]'>
 				<div class='carousel__scrollbar'></div>
 			</div>
+			<div class='rebate'>
+				<h3 class='rebate__title'>GET 50%</h3>
+				<form class='rebate__form-container'>
+					<label
+						class='rebate__email-label flex-0'
+						for='rebate-email'
+					>
+						<input
+							class='rebate__email-input'
+							id='rebate-email'
+							name='rebate-email'
+							placeholder='Email Address'
+							type='email'
+						>
+					</label>
+					<label
+						class='rebate__button-label'
+						for='rebate-subscribe'
+					>
+						<button
+							class='rebate__button-input'
+							id='rebate-subscribe'
+							type='button'
+						>
+							Subscribe
+						</button>
+					</label>
+				</form>
+				<img
+					alt='decoration picture of plate'
+					class='rebate__img'
+					height='170'
+					loading='lazy'
+					src='/src/img/dishes/dishes__img-3.png'
+					width='170'
+				/>
+			</div>
 		</div>
 	</section>
 </main>
-<footer class='footer'></footer>
+<footer class='footer'>
+	<div class='footer__container container'>
+		<img
+			alt='footer company logo'
+			class='footer__logo'
+			height='38'
+			loading='lazy'
+			src='/src/img/header/header__logo.svg'
+			width='100'
+		/>
+		<img
+			alt=''
+			class='footer__twitter'
+			height='13'
+			loading='lazy'
+			src='/src/img/footer/footer__twitter-icon.svg'
+			width='16'
+		/>
+		<ul class='footer__nav'>
+			<li class='footer__item'>
+				<a
+					class='footer__link'
+					href='/'
+				>
+					blog
+				</a>
+			</li>
+			<li class='footer__item'>
+				<a
+					class='footer__link'
+					href='/'
+				>
+					Pricing
+				</a>
+			</li>
+			<li class='footer__item'>
+				<a
+					class='footer__link'
+					href='/'
+				>
+					About Us
+				</a>
+			</li>
+			<li class='footer__item'>
+				<a
+					class='footer__link'
+					href='/'
+				>
+					Contact
+				</a>
+			</li>
+		</ul>
+		<div class='footer__divider divider'></div>
+		<p class='footer__copyright'>© 2023 EATLY All Rights Reserved.</p>
+	</div>
+</footer>
 <script
+	defer
 	src='/src/js/script.js'
 	type='module'
 ></script>
