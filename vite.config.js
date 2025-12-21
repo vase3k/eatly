@@ -1,7 +1,6 @@
 import path from "path";
 import { defineConfig } from "vite";
 import tailwindcss from "@tailwindcss/vite";
-import webfontDownload from "vite-plugin-webfont-dl";
 import { meta } from "vite-plugin-meta-tags";
 import vitePluginFaviconsInject from "vite-plugin-favicons-inject";
 import convertWebp from "./src/js/services/convertWebp";
@@ -11,6 +10,7 @@ const baseName = `/${path.basename(process.cwd())}`;
 export default defineConfig({
   base: baseName + "/dist/",
   build: {
+    assetsInlineLimit: 0,
     rollupOptions: {
       input: {
         index: "index.html",
@@ -20,19 +20,6 @@ export default defineConfig({
 
   plugins: [
     tailwindcss(),
-    webfontDownload(
-      [
-        "https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100.." +
-          "900&family=Manrope:wght@200..800&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=" +
-          "Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;" +
-          "1,500;1,600;1,700;1,800;1,900&family=Public+Sans:ital,wght@0,100..900;1,100..900&family=Quicksand:wght@300..700&display=swap",
-      ],
-      {
-        injectAsStyleTag: false,
-        minifyCss: true,
-        assetsSubfolder: "fonts",
-      },
-    ),
     meta({
       title: "Eatly",
       description: "Enjoy Foods All Over The World",

@@ -83,12 +83,15 @@
 
 		&__phone-wrap {
 			position: relative;
+			align-self: start;
 
 			&::before {
 				position: absolute;
 				display: block;
-				width: 100%;
+				width: 98%;
 				height: 100%;
+				left: 50%;
+				translate: -50% 0;
 				content: "";
 				border-radius: 30px;
 				box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.8);

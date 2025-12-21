@@ -107,7 +107,7 @@ function convertWebp(options = {}) {
       const stats = statSync(filePath); // Получение информации о файле или папке
       if (stats.isDirectory())
         updateHtmlUrls(filePath); // Если это директория — выполнить рекурсию
-      else if (extname(filePath) === ".html") {
+      else if (extname(filePath) === ".html" || extname(filePath) === ".css") {
         // Если файл является HTML
         let html = fs.readFileSync(filePath, "utf-8"); // Чтение содержимого HTML файла
         html = html.replace(/(\.jpg|\.jpeg|\.png)/gi, ".webp"); // Замена расширений изображений на .webp
@@ -138,30 +138,4 @@ function convertWebp(options = {}) {
   };
 }
 
-export default convertWebp; // Экспорт функции convertWebp по умолчанию
-
-// ==============================================
-// Обзор методов
-// ==============================================
-//
-// convertWebp(options)
-//   Основная функция плагина. Настраивает параметры,
-//   определяет вспомогательные функции и возвращает хуки Vite.
-//
-// isExcluded(filePath)
-//   Проверяет, нужно ли исключить файл по имени или папке.
-//
-// convertFile(filePath)
-//   Конвертирует один JPG/PNG файл в WebP, заменяет
-//   оригинал и выводит информацию в консоль.
-//
-// walkDir(dir)
-//   Рекурсивно обходит директории и обрабатывает файлы.
-//
-// updateHtmlUrls(dir)
-//   Обновляет HTML файлы, заменяя JPG/PNG ссылки на WebP.
-//
-// closeBundle()
-//   Хук Vite, вызываемый после сборки; конвертирует изображения,
-//   обновляет HTML и выводит общую статистику экономии.
-//
+export default convertWebp;

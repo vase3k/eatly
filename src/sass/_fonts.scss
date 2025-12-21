@@ -1,0 +1,97 @@
+@layer base {
+	@font-face {
+		font-family: 'Poppins';
+		src: url('/src/fonts/Poppins-Medium.woff2') format('woff2');
+		font-weight: 500;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Poppins';
+		src: url('/src/fonts/Poppins-SemiBold.woff2') format('woff2');
+		font-weight: 600;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Poppins';
+		src: url('/src/fonts/Poppins-Regular.woff2') format('woff2');
+		font-weight: 400;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Poppins';
+		src: url('/src/fonts/Poppins-ExtraBold.woff2') format('woff2');
+		font-weight: 800;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Poppins';
+		src: url('/src/fonts/Poppins-Bold.woff2') format('woff2');
+		font-weight: 700;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Poppins';
+		src: url('/src/fonts/Poppins-Italic.woff2') format('woff2');
+		font-weight: 400;
+		font-style: italic;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Inter';
+		src: url('/src/fonts/Inter-VariableFont_opsz,wght.ttf') format('truetype');
+		font-weight: 100 900;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Manrope';
+		src: url('/src/fonts/Manrope-VariableFont_wght.ttf') format('truetype');
+		font-weight: 200 800;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Plus Jakarta Sans';
+		src: url('/src/fonts/PlusJakartaSans-VariableFont_wght.ttf') format('truetype');
+		font-weight: 200 800;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Puplic Sans';
+		src: url('/src/fonts/PublicSans-VariableFont_wght.ttf') format('truetype');
+		font-weight: 100 900;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Quicksand';
+		src: url('/src/fonts/Quicksand-VariableFont_wght.ttf') format('truetype');
+		font-weight: 300 700;
+		font-style: normal;
+		font-display: swap;
+	}
+
+	@font-face {
+		font-family: 'Roboto';
+		src: url('/src/fonts/Roboto-VariableFont_wdth,wght.ttf') format('truetype');
+		font-weight: 100 900;
+		font-style: normal;
+		font-display: swap;
+	}
+}

@@ -6,6 +6,7 @@
 
 .feedback {
 	@include section-padding-block;
+	padding-block-end: unset;
 
 	&__container {
 

@@ -24,10 +24,10 @@
 		&__title {
 			max-width: 260px;
 			@include md {
-				max-width: 280px;
+				max-width: 330px;
 			}
 			@include lg {
-				max-width: 400px;
+				max-width: 440px;
 			}
 		}
 
@@ -61,8 +61,6 @@
 				}
 			}
 		}
-
-
 	}
 }
 

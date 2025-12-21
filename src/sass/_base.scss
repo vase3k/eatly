@@ -4,14 +4,13 @@
 
 @layer base {
 	html {
-		font-family: $font-family, sans-serif;
+		font-family: $font-family;
 		font-size: 16px;
 		font-weight: 400;
 		letter-spacing: 0;
 		background-color: $white-bg;
-		scrollbar-gutter: auto;
+		scrollbar-gutter: stable;
 	}
-
 }
 
 @layer override {
