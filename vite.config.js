@@ -1,8 +1,6 @@
 import path from "path";
 import { defineConfig } from "vite";
 import tailwindcss from "@tailwindcss/vite";
-import { meta } from "vite-plugin-meta-tags";
-import vitePluginFaviconsInject from "vite-plugin-favicons-inject";
 import convertWebp from "./src/js/services/convertWebp";
 
 const baseName = `/${path.basename(process.cwd())}`;
@@ -20,39 +18,12 @@ export default defineConfig({
 
   plugins: [
     tailwindcss(),
-    meta({
-      title: "Eatly",
-      description: "Enjoy Foods All Over The World",
-      url: "https://eatly.by/",
-      img: "/images/meta-og-image.jpg",
-      color: "#ffffff",
-    }),
-    vitePluginFaviconsInject("src/favicon/favicon.png", {
-      background: "#fff",
-      path: "assets/fav",
-      icons: {
-        android: true,
-        appleIcon: true,
-        appleStartup: false,
-        favicons: true,
-        windows: false,
-        yandex: true,
-      },
-      appName: "Eatly",
-      appShortName: "Eatly",
-      appDescription: "Enjoy Foods All Over The World",
-    }),
     convertWebp({
       inputDir: "dist",
       width: 1440,
       quality: 80,
-      excludeFolder: ["images"],
-      excludeFilesPrefix: [
-        "android-chrome",
-        "apple-touch-icon",
-        "favicon-",
-        "yandex-browser",
-      ],
+      excludeFolder: [],
+      excludeFilesPrefix: [],
     }),
     // legacy({
     // 	targets: ["defaults"],

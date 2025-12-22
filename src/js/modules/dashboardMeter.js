@@ -1,11 +1,28 @@
-const priceEl = document.querySelectorAll('.dashboard__card-price input');
-const bar = document.querySelectorAll('svg rect:last-child');
-const max = 600;
+class Dashboard {
+  selectors = {
+    root: ".dashboard__card-price input",
+    bar: "svg rect:last-child",
+  };
 
-priceEl.forEach((e, i) => {
-	e.addEventListener("input", () => {
-		const value = parseInt(e.value.replace('$', ''));
-		const percent = Math.min((value / max) * 100, 100);
-		bar[i].setAttribute('width', `${percent}%`);
-	})
-})
+  max = 600;
+
+  constructor() {
+    this.rootElements = document.querySelectorAll(this.selectors.root);
+    this.svgSelectors = document.querySelectorAll(this.selectors.bar);
+
+    this.updateBar();
+  }
+
+  updateBar() {
+    this.rootElements.forEach((rootInput, index) => {
+      rootInput.addEventListener("input", (event) => {
+        let value = parseInt(event.target.value.replace(/\D/g, ""));
+        if (isNaN(value)) value = 0;
+        const percent = Math.min((value / this.max) * 100, 100);
+        this.svgSelectors[index].setAttribute("width", `${percent}%`);
+      });
+    });
+  }
+}
+
+export default Dashboard;

@@ -5,14 +5,10 @@ import sharp from "sharp";
 function convertWebp(options = {}) {
   // Основная функция, принимающая объект настроек
   const inputDir = options.inputDir || "dist"; // Установка входной директории, по умолчанию 'dist'
-  const excludeFolders = options.excludeFolder || ["images"]; // Установка папок, которые нужно исключить, по умолчанию ['images']
-  const excludeFilesPrefix = options.excludeFilesPrefix || [
-    // Установка префиксов файлов, которые нужно исключить
-    "android-chrome", // Исключить файлы, начинающиеся с 'android-chrome'
-    "apple-touch-icon", // Исключить файлы, начинающиеся с 'apple-touch-icon'
-    "favicon-", // Исключить файлы, начинающиеся с 'favicon-'
-    "yandex-browser", // Исключить файлы, начинающиеся с 'yandex-browser'
-  ];
+  const excludeFolders = options.excludeFolder; // Установка папок, которые нужно исключить, по умолчанию ['meta-images']
+  const excludeFilesPrefix = options.excludeFilesPrefix; // Установка
+  // префиксов файлов, которые нужно исключить
+
   const quality = options.quality || 80; // Установка качества изображения при конвертации в webp, по умолчанию 80
   const width = options.width || null; // Необязательная ширина для изменения размера изображений, по умолчанию null (без ресайза)
 
